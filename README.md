@@ -11,7 +11,7 @@ A practical, no-fluff guide to what actually happens in a modern SWE interview l
 | 0 | Online Assessment *(pre-req)* | 60–90 min | DSA + MCQs | Auto-filtered by score |
 | 1 | Pure DSA | 60 min | Algorithmic depth | Correct + optimal + handles follow-ups |
 | 2 | CS Fundamentals | 60–75 min | OS / DBMS / CN / SQL / Linux / OOPS / Internals | Depth under follow-up chains |
-| 3 | Project Deep-Dive & Grilling | 45–60 min | Real ownership, tech choices, debugging | Can you defend your own work 3 levels deep |
+| 3 | Past Experience & Project Grilling | 45–60 min | Internships, ownership, tech choices, debugging | Can you defend your own work 3 levels deep |
 | 4 | Applied Coding: Backend + Full-Stack | 60–90 min | APIs, DB design, React, system wiring | Can you build something real end-to-end |
 | 5 | LLD & Light System Design | 60–75 min | Design thinking, patterns, scale basics | Can you design, not just recall |
 | 6 | Behavioral (STAR) | 45 min | Culture fit, teamwork, conflict resolution | Self-awareness, structured communication |
@@ -78,12 +78,13 @@ Opens with one easy-medium coding warm-up (~15 min), then goes **3–4 follow-up
 
 ---
 
-## Round 3 — Project Deep-Dive & Grilling
+## Round 3 — Past Experience & Project Grilling
 
-> This round is where "technically fine but shallow on their own work" gets caught. Vague answers on your own project are the **single most common fresher red flag** reported by real interviewers.
+> This round is where "technically fine but shallow on their own work" gets caught. Vague answers on your past internships or personal projects are the **single most common fresher red flag** reported by real interviewers.
 
 | Segment | What Gets Asked |
 | :--- | :--- |
+| **Internship Deep-Dive** | "Walk me through the architecture of the feature you built during your internship." "What was the code review process like?" "How did your work impact the business metrics?" |
 | **Tech Stack Justification** | "Why did you choose React/Node over X?" "Why MongoDB instead of Postgres for this specific feature?" You must defend your choices with real tradeoffs, not "because a tutorial used it." |
 | **End-to-End Walkthrough** | "Trace a user registration from clicking 'Submit' to the data being saved in the database." |
 | **Debugging & Challenges** | "What was the hardest bug you faced in this project? Walk me through how you isolated and fixed it." |
