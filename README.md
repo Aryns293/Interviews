@@ -10,13 +10,14 @@ A practical, no-fluff guide to what actually happens in a modern SWE interview l
 | :---: | :--- | :---: | :--- | :--- |
 | 0 | Online Assessment *(pre-req)* | 60–90 min | DSA + MCQs | Auto-filtered by score |
 | 1 | Pure DSA | 60 min | Algorithmic depth | Correct + optimal + handles follow-ups |
-| 2 | CS Fundamentals + Applied Coding | 60–75 min | OS / DBMS / CN / SQL / Linux / OOPS / Internals | Depth under follow-up chains |
-| 3 | Backend + Full-Stack Applied Coding | 60–75 min | REST APIs, DB design, system wiring | Can you build something real end-to-end |
-| 4 | Frontend + React (role-specific) | 45–60 min | Component design, state, performance, DOM | Clean, idiomatic, production-aware code |
-| 5 | LLD + System Design + Project | 60–75 min | Design thinking + real ownership | Can you design, not just recall |
-| 6 | Hiring Manager / Bar Raiser | 45–60 min | Behavioral + judgment + culture fit | Ownership, communication, self-awareness |
+| 2 | CS Fundamentals | 60–75 min | OS / DBMS / CN / SQL / Linux / OOPS / Internals | Depth under follow-up chains |
+| 3 | Project Deep-Dive & Grilling | 45–60 min | Real ownership, tech choices, debugging | Can you defend your own work 3 levels deep |
+| 4 | Applied Coding: Backend + Full-Stack | 60–90 min | APIs, DB design, React, system wiring | Can you build something real end-to-end |
+| 5 | LLD & Light System Design | 60–75 min | Design thinking, patterns, scale basics | Can you design, not just recall |
+| 6 | Behavioral (STAR) | 45 min | Culture fit, teamwork, conflict resolution | Self-awareness, structured communication |
+| 7 | Hiring Manager / Bar Raiser | 45–60 min | Judgment, leadership principles, expectations | Ownership, maturity, "hire/no-hire" decider |
 
-> **Note:** Not every company runs all 6 rounds. Rounds 3 and 4 are role-specific — backend roles skip Round 4, frontend/full-stack roles may get both. Rounds 0–2 and 5–6 are nearly universal.
+> **Note:** This represents a highly comprehensive 100% coverage loop. Realistically, companies will mix and match these rounds, but if you prepare for all 7 stages, you are covered for virtually any SWE interview.
 
 ---
 
@@ -57,7 +58,7 @@ A practical, no-fluff guide to what actually happens in a modern SWE interview l
 
 ---
 
-## Round 2 — CS Fundamentals + Applied Coding
+## Round 2 — CS Fundamentals
 
 > This is the round that filters people who only grinded LeetCode.
 
@@ -77,96 +78,79 @@ Opens with one easy-medium coding warm-up (~15 min), then goes **3–4 follow-up
 
 ---
 
-## Round 3 — Backend + Full-Stack Applied Coding
-
-> Tests whether you can build something real — not just solve isolated algorithms.
-
-This round is increasingly common and is often labeled "practical coding" or "take-home extension." You'll be given a partial system and asked to extend/fix/debug it.
-
-| Segment | What Gets Asked |
-| :--- | :--- |
-| **REST API Design** | Design CRUD endpoints for a given entity (e.g., a blog, e-commerce cart). Follow REST conventions: correct HTTP verbs, status codes, route naming, versioning (`/v1/`), pagination (`?page=&limit=`) |
-| **Authentication Flow** | Implement or explain JWT-based auth: token signing, refresh token rotation, middleware/guard pattern, role-based access control (RBAC), protecting routes |
-| **Database Design** | Schema design for a given domain — normalize to 3NF, choose between SQL and NoSQL with justification, write migration scripts, handle soft deletes, design indexes for query patterns |
-| **ORM & Query Optimization** | N+1 query problem (live debug), eager vs lazy loading, writing raw SQL for performance-critical paths, connection pooling |
-| **Error Handling & Middleware** | Global error handler pattern, structured error responses (`{ error, message, statusCode }`), request validation (Joi/Zod), logging middleware (Morgan/Winston) |
-| **Async Patterns** | Callback → Promise → async/await evolution, `Promise.all` vs `Promise.allSettled`, event loop + why Node.js is non-blocking, queue-based task offloading |
-| **Message Queues / Background Jobs** | Why you'd use a queue (RabbitMQ/Kafka/BullMQ), producer-consumer model, retry logic, dead-letter queue concept |
-| **Caching** | Redis basics — cache-aside vs write-through, TTL, cache invalidation strategies, when *not* to cache |
-| **Testing** | Unit vs integration vs e2e, mocking external calls, testing async code, test pyramid |
-
-**Common live problems:**
-- Build a RESTful API for a to-do app with auth (Node/Express or Spring Boot)
-- Debug a leaking endpoint that causes high DB load
-- Add rate-limiting middleware to an existing Express app
-- Write a migration to add a new indexed column without downtime
-
----
-
-## Round 4 — Frontend + React (Role-Specific)
-
-> Skipped for pure backend roles. Full-stack and frontend roles almost always include this.
-
-| Segment | What Gets Asked |
-| :--- | :--- |
-| **Core JavaScript** | Event loop + call stack (live trace), closure, `this` binding (`call`/`apply`/`bind`), prototype chain, `var` vs `let` vs `const` (temporal dead zone), debounce vs throttle implementation, deep clone |
-| **DOM & Browser APIs** | Event bubbling vs capturing (live demo), `stopPropagation` vs `preventDefault`, `localStorage` vs `sessionStorage` vs cookies, `fetch` vs `XMLHttpRequest`, `IntersectionObserver`, lazy loading images |
-| **React Core** | Controlled vs uncontrolled components, `useState` / `useEffect` / `useRef` / `useMemo` / `useCallback` — when and why each, `useEffect` dependency array gotchas (stale closures), reconciliation + virtual DOM |
-| **State Management** | Prop drilling → Context API → Redux/Zustand: when to escalate, Redux flow (action → reducer → store → selector), `useReducer` vs Redux for local vs global state |
-| **Performance** | `React.memo`, `useMemo`, `useCallback` — what they actually prevent (re-renders), code splitting (`React.lazy` + `Suspense`), key prop importance in lists, avoiding unnecessary re-renders via profiler |
-| **Component Design** | Design a reusable component live (Modal, Dropdown, Accordion, Tabs), prop interface design, compound component pattern, render props vs HOC vs hooks |
-| **CSS & Styling** | Box model, `position` (relative/absolute/fixed/sticky), flexbox vs grid (when each), CSS specificity rules, BEM naming, CSS-in-JS tradeoffs (styled-components vs modules) |
-| **Routing & Data Fetching** | React Router v6 basics, `loader` / `action` pattern, `useNavigate`, SWR/React Query — stale-while-revalidate, optimistic updates |
-| **Accessibility (a11y)** | ARIA roles, `tabIndex`, focus management, semantic HTML, screen reader compatibility |
-
-**Common live problems:**
-- Build a debounced search bar with live results from a mock API
-- Implement an infinite scroll list
-- Design a multi-step form with validation
-- Fix a React component that re-renders on every keystroke
-- Implement a custom `useFetch` hook
-
----
-
-## Round 5 — LLD + Light System Design + Project Deep-Dive
-
-| Segment | What Gets Asked |
-| :--- | :--- |
-| **LLD** | One full design problem worked to actual classes: Parking Lot, Splitwise, Elevator System, Vending Machine, Tic-Tac-Toe, Library Management System — expect design pattern follow-ups (Strategy, State, Observer, Factory, Singleton) and thread-safety questions |
-| **Light System Design** | Increasingly common even for freshers: "Design a URL Shortener," "Design a Rate Limiter," "Design a Notification Service" — they're checking basic scale reasoning (DB choice, caching layer, load balancer), not expecting senior HLD depth |
-| **Project Deep-Dive** | Real cross-questioning: why this tech stack, end-to-end request walkthrough, hardest bug + how you actually debugged it, "what breaks at 10x traffic," what you'd redesign today, tradeoffs you made |
+## Round 3 — Project Deep-Dive & Grilling
 
 > This round is where "technically fine but shallow on their own work" gets caught. Vague answers on your own project are the **single most common fresher red flag** reported by real interviewers.
 
-**LLD Design Patterns you must know cold:**
-| Pattern | When asked |
+| Segment | What Gets Asked |
 | :--- | :--- |
-| Strategy | Payment processor with multiple gateways, sorting algorithm switcher |
-| Observer | Notification system, event bus, pub-sub |
-| Factory / Abstract Factory | Object creation without specifying exact class |
-| Singleton | DB connection pool, logger, config manager |
-| State | Elevator, vending machine, order lifecycle |
-| Decorator | Adding features to streams, UI components |
-| Command | Undo/redo, task queue |
+| **Tech Stack Justification** | "Why did you choose React/Node over X?" "Why MongoDB instead of Postgres for this specific feature?" You must defend your choices with real tradeoffs, not "because a tutorial used it." |
+| **End-to-End Walkthrough** | "Trace a user registration from clicking 'Submit' to the data being saved in the database." |
+| **Debugging & Challenges** | "What was the hardest bug you faced in this project? Walk me through how you isolated and fixed it." |
+| **Scaling & Breaking Points** | "What breaks in this project if traffic increases 10x? 100x?" "How would you handle a sudden spike in concurrent writes?" |
+| **Hindsight** | "If you were to rewrite this project today, what architecture or design patterns would you change?" |
 
 ---
 
-## Round 6 — Hiring Manager / Bar Raiser
+## Round 4 — Applied Coding: Backend + Full-Stack
+
+> Tests whether you can build something real — not just solve isolated algorithms. This combines backend endpoints, database wiring, and frontend integration into a single applied round.
 
 | Segment | What Gets Asked |
 | :--- | :--- |
-| **Behavioral (STAR)** | Conflict with a teammate, a failure and what you learned, working under a tight deadline, disagreement with a decision, why this company/role — always answer with Situation → Task → Action → Result |
-| **Leadership Principles (Amazon)** | Every answer gets mapped to an LP (Ownership, Dive Deep, Disagree & Commit, Bias for Action, Customer Obsession) — a technically flawless answer with no LP-shaped story can still fail this round |
-| **Resume Walkthrough** | They'll pick one line off your resume at random and ask you to defend it 3 levels deep — don't list anything you can't explain cold |
-| **Wildcard / Ambiguity** | Open-ended judgment scenario with no clean answer ("your manager asks you to ship something you think is broken — what do you do?") — they're testing reasoning and communication, not a "correct" answer |
-| **Expectations / Close** | Salary band, location, notice period, team preferences — usually light-touch at fresher level |
+| **REST API Design & Auth** | Design CRUD endpoints (`/v1/users`, etc.). Implement or explain JWT-based auth: token signing, refresh token rotation, middleware/guard pattern, protecting routes. |
+| **Database Wiring & ORM** | Schema design, N+1 query problem (live debug), eager vs lazy loading, writing raw SQL for performance-critical paths, connection pooling. |
+| **Core JavaScript & DOM** | Event loop + call stack (live trace), closures, `this` binding (`call`/`apply`/`bind`), event bubbling vs capturing, debounce vs throttle implementation. |
+| **React Core & State** | `useState` / `useEffect` / `useMemo` / `useCallback` — when and why each, `useEffect` dependency array gotchas (stale closures), reconciliation. |
+| **Performance & Caching** | React: preventing unnecessary re-renders (`React.memo`). Backend: Redis basics — cache-aside vs write-through, TTL, cache invalidation strategies. |
+| **Async Patterns** | `Promise.all` vs `Promise.allSettled`, event loop + why Node.js is non-blocking, fetching data effectively (stale-while-revalidate). |
 
-**Prepare these STAR stories before the interview:**
-1. A time you went above and beyond the scope of a task
-2. A time you failed and what you changed afterwards
-3. A conflict with a peer/teammate and how it was resolved
-4. A time you had to make a decision with incomplete information
-5. A time you took initiative without being asked
+**Common live problems:**
+- Build a debounced search bar with live results from a mock API
+- Build a RESTful API for a to-do app with auth (Node/Express or Spring Boot)
+- Debug a leaking endpoint that causes high DB load
+- Fix a React component that re-renders on every keystroke
+
+---
+
+## Round 5 — LLD & Light System Design
+
+| Segment | What Gets Asked |
+| :--- | :--- |
+| **LLD (Low-Level Design)** | One full design problem worked to actual classes: Parking Lot, Splitwise, Elevator System, Vending Machine, Tic-Tac-Toe, Library Management System. Expect to implement interfaces and maintain state. |
+| **Design Patterns** | **Strategy** (Payment processors, sorting algorithms), **Observer** (Pub-sub, event listeners), **Factory** (Object creation abstraction), **Singleton** (DB connection pool), **State** (Elevator, vending machine), **Command** (Undo/redo logic). |
+| **Thread-Safety** | "How would you make this class thread-safe?" "What happens if two users try to book the same ticket concurrently?" (Locks, atomic variables, concurrent data structures). |
+| **Light System Design (HLD)** | Increasingly common even for freshers: "Design a URL Shortener," "Design a Rate Limiter," "Design a Notification Service" — they're checking basic scale reasoning (DB choice, caching layer, load balancer), not expecting senior HLD depth. |
+
+---
+
+## Round 6 — Behavioral (STAR)
+
+> Tests teamwork, emotional maturity, and communication. A candidate who is technically brilliant but lacks empathy or teamwork skills gets filtered here.
+
+| Segment | What Gets Asked |
+| :--- | :--- |
+| **Conflict Resolution** | "Tell me about a time you disagreed with a teammate or manager. How did you resolve it?" |
+| **Failures & Growth** | "Tell me about a project that failed or a time you made a significant mistake. What did you learn?" |
+| **Working Under Pressure** | "Describe a time you had to deliver under a very tight deadline. How did you prioritize?" |
+| **Ambiguity** | "Tell me about a time you had to make a decision with incomplete information." |
+| **Initiative** | "Give an example of a time you went above and beyond your assigned responsibilities." |
+
+**The STAR Framework:**
+Always answer with **S**ituation (context) → **T**ask (the challenge) → **A**ction (what *you* did) → **R**esult (quantifiable outcome).
+
+---
+
+## Round 7 — Hiring Manager / Bar Raiser
+
+> The final decision-maker. This round evaluates your overall trajectory, leadership potential, and whether you raise the bar for the team.
+
+| Segment | What Gets Asked |
+| :--- | :--- |
+| **Leadership Principles** | (Amazon specifically, but used everywhere). Every answer gets mapped to a core value (Ownership, Dive Deep, Disagree & Commit, Bias for Action, Customer Obsession). |
+| **Resume Deep-Dive** | They'll pick one line off your resume at random and ask you to defend it 3 levels deep. If you claim a 20% performance increase, be prepared to explain exactly how you measured it. |
+| **Judgment & Scenarios** | Open-ended judgment scenarios: "Your manager asks you to ship something you think is fundamentally broken — what do you do?" |
+| **Expectations & Close** | Career goals, team preferences, why you want to work at this specific company, salary expectations (usually light-touch at the fresher level). |
 
 ---
 
@@ -174,14 +158,14 @@ This round is increasingly common and is often labeled "practical coding" or "ta
 
 | Neglected Area | Why It Matters |
 | :--- | :--- |
-| **Constraint changes mid-solve** | The #1 DSA differentiator — practice with a friend who changes requirements after you start |
-| **Project depth** | If you can't walk through your own code 3 levels deep, it reads as copied work |
-| **SQL window functions** | Asked in ~60% of DBMS rounds but skipped in most tutorials |
-| **REST idempotency** | Deceptively simple concept — very commonly asked, very commonly fumbled |
-| **Thread-safety in LLD** | Almost every LLD problem gets a follow-up: "make it thread-safe" |
-| **The `useEffect` closure trap** | React's most common follow-up after basic hooks |
-| **N+1 query problem** | Backend's most common "gotcha" — know it by name and fix |
-| **Behavioral prep** | Most people do 0 prep for Round 6 and lose the offer here |
+| **Constraint changes mid-solve** | The #1 DSA differentiator — practice with a friend who changes requirements after you start. |
+| **Project depth** | If you can't walk through your own code 3 levels deep, it reads as copied work. |
+| **SQL window functions** | Asked in ~60% of DBMS rounds but skipped in most tutorials. |
+| **REST idempotency** | Deceptively simple concept — very commonly asked, very commonly fumbled. |
+| **Thread-safety in LLD** | Almost every LLD problem gets a follow-up: "make it thread-safe." |
+| **The `useEffect` closure trap** | React's most common follow-up after basic hooks. |
+| **N+1 query problem** | Backend's most common "gotcha" — know it by name and know how to fix it. |
+| **Behavioral prep** | Most people do 0 prep for Round 6/7 and lose the offer at the finish line. |
 
 ---
 
@@ -191,9 +175,10 @@ Each round tests a genuinely different failure mode:
 
 - **Round 1** — filters *"can't code under pressure"*
 - **Round 2** — filters *"crammed DSA, has no CS foundation"*
-- **Round 3** — filters *"knows syntax but can't wire a real system"*
-- **Round 4** — filters *"knows backend but no frontend intuition (or vice versa)"*
-- **Round 5** — filters *"can code but can't design or doesn't understand their own project"*
-- **Round 6** — filters *"technically fine but poor judgment / communication / culture fit"*
+- **Round 3** — filters *"doesn't understand their own project / copied from a tutorial"*
+- **Round 4** — filters *"knows syntax but can't build a real, working system"*
+- **Round 5** — filters *"can code but can't design scalable, maintainable abstractions"*
+- **Round 6** — filters *"lacks teamwork, empathy, or maturity"*
+- **Round 7** — filters *"technically fine but poor judgment or poor culture fit"*
 
-> A candidate can be excellent in 5 rounds and still get rejected by failing just one. "Well-rounded but not deep anywhere" fails far more often than "very strong in 4 areas, average in 2."
+> A candidate can be excellent in 6 rounds and still get rejected by failing just one. "Well-rounded but not deep anywhere" fails far more often than "very strong in 5 areas, average in 2."
