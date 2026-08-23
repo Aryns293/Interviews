@@ -2,6 +2,8 @@
 
 A practical, no-fluff guide to what actually happens in a modern SWE interview loop. Every round, every topic, and what the interviewers are **actually** filtering for.
 
+> 🚀 **New:** Check out [`project_specific_loops.md`](project_specific_loops.md) for 5 custom interview loops tailored exactly to your resume (Rolewize, QueueFlow, CodeSync AI, gitlight)!
+
 ---
 
 ## The Loop at a Glance
