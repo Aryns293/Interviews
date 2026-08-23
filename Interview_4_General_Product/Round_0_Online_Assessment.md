@@ -6,25 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Top K Frequent Elements
-**Difficulty:** Medium
-
-Given an array of integers, return the `k` most frequent elements.
-
-**What I'm testing:**
-- Min-heap of size k: O(n log k)
-- Bucket sort: O(n) — can you think of this?
-- Do you handle ties correctly?
-
-### Problem 2 — Median of Two Sorted Arrays
+### Problem 1 — Largest Rectangle in Histogram (Stack)
 **Difficulty:** Hard
 
-Find the median of two sorted arrays in O(log(min(m,n))) time.
+Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
 
-**What I'm testing:**
-- Do you know the binary search on the smaller array approach?
-- Do you handle even/odd total length?
-- Do you start with the O(m+n) merge and then push for optimization?
+---
+
+### Problem 2 — Longest Valid Parentheses (DP/Stack)
+**Difficulty:** Hard
+
+Given a string containing just the characters '(' and ')' return the length of the longest valid (well-formed) parentheses substring.
 
 ---
 

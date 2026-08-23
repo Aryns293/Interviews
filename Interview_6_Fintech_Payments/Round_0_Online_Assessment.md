@@ -6,33 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Subarray Sum Equals K
-**Difficulty:** Medium
+### Problem 1 — Split Array Largest Sum (Binary Search)
+**Difficulty:** Hard
 
-Given an integer array `nums` and an integer `k`, return the total number of contiguous subarrays whose sum equals `k`.
-
-**Fintech framing:** Find runs of consecutive transactions that sum to exactly a flagged amount (fraud pattern detection). The array is a daily ledger.
-
-**What I'm testing:**
-- Do you recognize the prefix sum + hashmap approach immediately? O(n) time, O(n) space.
-- Can you explain *why* `prefix[j] - prefix[i] = k` means subarray `[i+1..j]` sums to k?
-- Edge cases: negative numbers in the array (the sliding window approach breaks here — only prefix sum works), k = 0.
-
-**Common mistake:** Using a sliding window (two-pointer) — that only works for positive numbers. Transactions can be negative (refunds).
+Given an integer array nums and an integer k, split nums into k non-empty subarrays such that the largest sum of any subarray is minimized. Return the minimized largest sum of the split.
 
 ---
 
-### Problem 2 — Merge Intervals
-**Difficulty:** Medium
+### Problem 2 — Number of Submatrices That Sum to Target (Prefix Sum)
+**Difficulty:** Hard
 
-Given an array of intervals `[start, end]`, merge all overlapping intervals and return the result.
-
-**Fintech framing:** Merge overlapping settlement windows from multiple payment processors into a single consolidated clearing window.
-
-**What I'm testing:**
-- Sort by start time first — do you state this before coding?
-- Correct merge condition: `current.start <= last.end` → merge
-- Edge cases: single interval, all intervals overlapping, no overlaps
+Given a matrix and a target, return the number of non-empty submatrices that sum to target. A submatrix x1, y1, x2, y2 is the set of all cells matrix[x][y] with x1 <= x <= x2 and y1 <= y <= y2.
 
 ---
 

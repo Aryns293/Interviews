@@ -6,17 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Network Delay Time
-**Difficulty:** Medium
+### Problem 1 — Alien Dictionary (Topological Sort)
+**Difficulty:** Hard
 
-You are given a network of `n` nodes, labeled from `1` to `n`. You are also given `times`, a list of travel times as directed edges `times[i] = (ui, vi, wi)`, where `ui` is the source node, `vi` is the target node, and `wi` is the time it takes for a signal to travel from source to target. We will send a signal from a given node `k`. Return the minimum time it takes for all the `n` nodes to receive the signal. If it is impossible for all the `n` nodes to receive the signal, return `-1`. (Dijkstra)
+There is a new alien language that uses the English alphabet. However, the order among the letters is unknown to you. You are given a list of strings words from the alien language's dictionary, where the strings in words are sorted lexicographically by the rules of this new language. Return a string of the unique letters in the new alien language sorted in lexicographically increasing order.
 
 ---
 
-### Problem 2 — Sliding Window Maximum
+### Problem 2 — Bus Routes (BFS)
 **Difficulty:** Hard
 
-You are given an array of integers `nums`, there is a sliding window of size `k` which is moving from the very left of the array to the very right. You can only see the `k` numbers in the window. Each time the sliding window moves right by one position. Return the max sliding window. (Monotonic Deque)
+You are given an array routes representing bus routes where routes[i] is a bus route that the ith bus repeats forever. Return the least number of buses you must take to travel from source to target. Return -1 if it is not possible.
 
 ---
 

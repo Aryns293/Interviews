@@ -6,39 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Group Anagrams
-**Difficulty:** Medium
+### Problem 1 — Word Search II (Trie + DFS)
+**Difficulty:** Hard
 
-Given an array of strings, group the anagrams together. Return a list of groups. The order within each group and the order of groups doesn't matter.
-
-**What I'm testing:**
-- Do you immediately reach for a sorted-string as the hash key?
-- Can you articulate the time complexity: O(n * k log k) where k is max string length?
-- Do you try a character-frequency array as the key for O(n * k) instead? That's the follow-up if you go the sort route.
-
-**Common mistakes to avoid:**
-- Treating `"eat"` and `"tea"` as different — sort both first
-- Using a list as a dictionary key in Python (not hashable) — use a tuple
+Given an m x n board of characters and a list of strings words, return all words on the board. Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
 
 ---
 
-### Problem 2 — Word Break II
+### Problem 2 — Maximum Profit in Job Scheduling (DP + Binary Search)
 **Difficulty:** Hard
 
-Given a string `s` and a dictionary of strings `wordDict`, add spaces to `s` to construct all possible sentences where each word is a valid dictionary word. Return all such possible sentences.
-
-**What I'm testing:**
-- Do you recognize this is DP + backtracking (not pure DP)?
-- Do you add memoization to avoid recomputing from the same index?
-- Do you handle the edge case where no valid segmentation exists (return empty list, not crash)?
-- Can you articulate *why* this blows up exponentially without memoization?
-
-**Example:**
-```
-s = "catsanddog"
-wordDict = ["cat","cats","and","sand","dog"]
-Output: ["cats and dog", "cat sand dog"]
-```
+We have n jobs, where every job is scheduled to be done from startTime[i] to endTime[i], obtaining a profit of profit[i]. You're given the startTime, endTime and profit arrays, return the maximum profit you can take such that there are no two jobs in the subset with overlapping time range.
 
 ---
 

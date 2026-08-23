@@ -6,17 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Product of Array Except Self
-**Difficulty:** Medium
+### Problem 1 — Maximum Performance of a Team (Greedy)
+**Difficulty:** Hard
 
-Given an integer array `nums`, return an array `answer` such that `answer[i]` is equal to the product of all the elements of `nums` except `nums[i]`. You must write an algorithm that runs in O(n) time and without using the division operation.
+You are given two integers n and k and two integer arrays speed and efficiency both of length n. There are n engineers numbered from 1 to n. Return the maximum performance of a team of at most k engineers, where performance is the sum of their speeds multiplied by the minimum efficiency among them.
 
 ---
 
-### Problem 2 — Longest Consecutive Sequence
-**Difficulty:** Medium
+### Problem 2 — Median of Two Sorted Arrays (Binary Search)
+**Difficulty:** Hard
 
-Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.
+Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 
 ---
 

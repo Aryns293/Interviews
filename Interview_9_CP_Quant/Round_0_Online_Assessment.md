@@ -6,28 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Maximum XOR of Two Numbers in an Array
-**Difficulty:** Medium-Hard
+### Problem 1 — Count of Smaller Numbers After Self (Fenwick Tree)
+**Difficulty:** Hard
 
-Given an integer array `nums`, return the maximum result of `nums[i] XOR nums[j]`, where `0 <= i <= j < n`.
-
-**What I'm testing:**
-- Can you identify that O(n²) brute force will TLE?
-- Do you immediately see the bitwise Trie approach?
-- Insert all numbers into a Trie (binary tree where left = bit 0, right = bit 1). For each number, walk the Trie trying to pick the opposite bit at each step (to maximize XOR).
-- Time: O(N * L) where L is max bits (32).
+Given an integer array nums, return an integer array counts where counts[i] is the number of smaller elements to the right of nums[i].
 
 ---
 
-### Problem 2 — Longest Valid Parentheses
+### Problem 2 — Reverse Pairs (Merge Sort)
 **Difficulty:** Hard
 
-Given a string containing just the characters `'('` and `')'`, return the length of the longest valid (well-formed) parentheses substring.
-
-**What I'm testing:**
-- Do you know the O(n) Stack approach (push indices) OR the O(n) DP approach?
-- Stack approach: push `-1` initially. For `(`, push index. For `)`, pop. If empty, push index (new base). Else, `ans = max(ans, i - stack.top())`.
-- O(1) space approach (left/right counters scanning both directions) is bonus points.
+Given an integer array nums, return the number of reverse pairs in the array. A reverse pair is a pair (i, j) where 0 <= i < j < nums.length and nums[i] > 2 * nums[j].
 
 ---
 

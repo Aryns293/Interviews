@@ -6,29 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Course Schedule II
-**Difficulty:** Medium
+### Problem 1 — Critical Connections in a Network (Graph)
+**Difficulty:** Hard
 
-You are given `numCourses` and a list of `prerequisites`. Return a valid order to finish all courses. If impossible, return an empty array.
-
-**What I'm testing:**
-- Do you recognize this is a topological sort problem immediately, or do you fumble with BFS first?
-- Do you handle the cycle-detection case *before* I ask you to?
-- Do you write the adjacency list correctly, or do you reverse the edge direction?
-
-**Gotcha:** A lot of candidates invert the edge direction when building the graph. I'm watching for that.
+There are n servers numbered from 0 to n - 1 connected by undirected server-to-server connections forming a network where connections[i] = [ai, bi] represents a connection between servers ai and bi. Any server can reach other servers directly or indirectly through the network. A critical connection is a connection that, if removed, will make some servers unable to reach some other server. Return all critical connections in the network in any order.
 
 ---
 
-### Problem 2 — Kth Largest Element in a Stream
-**Difficulty:** Medium
+### Problem 2 — Trapping Rain Water (Two Pointers)
+**Difficulty:** Hard
 
-Design a class that finds the `k`th largest element in a stream. Calls to `add(val)` must return the current `k`th largest.
-
-**What I'm testing:**
-- Do you immediately reach for a min-heap of size `k`?
-- Can you articulate *why* a min-heap of size `k` solves this without sorting the whole stream?
-- Time complexity analysis: O(log k) per insertion — can you explain that clearly?
+Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
 
 ---
 

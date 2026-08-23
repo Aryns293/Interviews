@@ -6,33 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Design Hit Counter
-**Difficulty:** Medium
+### Problem 1 — Serialize and Deserialize Binary Tree (Tree)
+**Difficulty:** Hard
 
-Design a hit counter which counts the number of hits received in the past 5 minutes (300 seconds).
-
-**SaaS framing:** API Rate Limiting core logic.
-
-**What I'm testing:**
-- Can you design this for scale?
-- *Approach 1 (Basic):* A Queue. Push timestamp. On query, pop timestamps older than `now - 300`. Return queue length. (Bad for memory if 1M hits/sec).
-- *Approach 2 (Buckets):* Array of size 300 (one per second). Array 1 stores timestamps, Array 2 stores counts. Map `time % 300` to index. If `timestamp[idx] == current_time`, increment count. Else, reset `timestamp[idx] = current_time` and `count = 1`. Sum the counts array for the answer. O(1) time and space.
+Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.
 
 ---
 
-### Problem 2 — Text Justification
+### Problem 2 — Valid Arrangement of Pairs (Eulerian Path)
 **Difficulty:** Hard
 
-Given an array of words and a width `maxWidth`, format the text such that each line has exactly `maxWidth` characters and is fully (left and right) justified.
-
-**SaaS framing:** Report generation, PDF formatting, string manipulation for billing statements.
-
-**What I'm testing:**
-- Extreme attention to detail.
-- Handling the greedy packing of words per line.
-- Calculating the exact number of spaces between words `(maxWidth - totalChars) / (numWords - 1)`.
-- Handling the uneven distribution of spaces (left slots get extra).
-- Handling the edge case of the last line (left justified).
+You are given a 0-indexed 2D integer array pairs where pairs[i] = [starti, endi]. An arrangement of pairs is valid if for every index i where 1 <= i < pairs.length, we have endi-1 == starti. Return any valid arrangement of pairs.
 
 ---
 

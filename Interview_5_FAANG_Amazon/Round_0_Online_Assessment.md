@@ -6,31 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Longest Increasing Path in a Matrix
+### Problem 1 — Best Time to Buy and Sell Stock IV (DP)
 **Difficulty:** Hard
 
-Given an `m x n` matrix of integers, find the length of the longest increasing path. You can move in 4 directions (up, down, left, right). You cannot move diagonally or wrap around.
-
-**What I'm testing:**
-- DFS with memoization — classic topological order on a DAG (each cell is a node, edges point to adjacent cells with greater values)
-- Time: O(m*n), each cell visited once due to memoization
-- Do you recognize that this is DFS + memo, NOT DP in the traditional sense? (There's no obvious recurrence order without memoization)
-
-**Common mistakes:**
-- Trying to define a DP bottom-up without recognizing the dependency order problem (you don't know which cells are "smaller" without a sort)
-- Not handling the boundary conditions correctly
+You are given an integer array prices where prices[i] is the price of a given stock on the ith day, and an integer k. Find the maximum profit you can achieve. You may complete at most k transactions.
 
 ---
 
-### Problem 2 — Word Search II
+### Problem 2 — Max Points on a Line (Math)
 **Difficulty:** Hard
 
-Given a 2D board of characters and a list of words, find all words that exist in the board. Words can be constructed from letters in adjacent cells (horizontally or vertically adjacent). The same cell cannot be used more than once per word.
-
-**What I'm testing:**
-- Build a Trie from the word list — use it to prune the DFS early
-- Do you remove found words/leaves from the Trie as you find them (prevents duplicates and prunes dead branches)?
-- Time: O(m * n * 4^L) where L is the max word length — Trie pruning drastically reduces this in practice
+Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane, return the maximum number of points that lie on the same straight line.
 
 ---
 

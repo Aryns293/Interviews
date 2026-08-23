@@ -6,30 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Meeting Rooms II
-**Difficulty:** Medium
+### Problem 1 — Minimum Window Substring (Sliding Window)
+**Difficulty:** Hard
 
-Given an array of meeting intervals `[start, end]`, find the minimum number of conference rooms required.
-
-**Startup framing:** How many concurrent build/deploy pipeline slots does a 3-person team actually need?
-
-**What I'm testing:**
-- Min-heap approach: sort by start time, use a min-heap of end times, size of heap = rooms in use at any point
-- Time: O(n log n), Space: O(n)
-- Edge cases: no meetings, all meetings at the same time, back-to-back meetings (does `[9,10]` and `[10,11]` need 1 or 2 rooms? They're adjacent, not overlapping — 1 room.)
+Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string.
 
 ---
 
-### Problem 2 — Partition Equal Subset Sum
-**Difficulty:** Medium-Hard
+### Problem 2 — N-Queens (Backtracking)
+**Difficulty:** Hard
 
-Given an integer array `nums`, return `true` if the array can be partitioned into two subsets with equal sum.
-
-**What I'm testing:**
-- Do you recognize this as a 0/1 knapsack variant? (Target = total_sum / 2, find if a subset sums to target)
-- DP table: `dp[i][j]` = can we achieve sum `j` using first `i` elements?
-- Optimization: 1D DP (rolling array), O(n * sum) time, O(sum) space
-- Early exit: if `total_sum` is odd → return false immediately
+The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle.
 
 ---
 

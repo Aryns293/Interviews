@@ -6,30 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Rotting Oranges (Multi-Source BFS)
-**Difficulty:** Medium
+### Problem 1 — Edit Distance (DP)
+**Difficulty:** Hard
 
-Given an `m x n` grid where `0` is empty, `1` is fresh, and `2` is rotten. Every minute, any fresh orange adjacent to a rotten one becomes rotten. Return the minimum minutes until no cell has a fresh orange (or -1 if impossible).
-
-**Distributed Team Framing:** Simulate a status update propagating across a distributed team's task board, minute by minute, with no central sync point.
-
-**What I'm testing:**
-- Do you use Multi-Source BFS? (Initialize queue with ALL rotten oranges at time 0).
-- If you use single-source BFS from each rotten orange, you will fail the time complexity check.
-- Time: O(m * n), Space: O(m * n).
+Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2. You have the following three operations permitted on a word: Insert a character, Delete a character, Replace a character.
 
 ---
 
-### Problem 2 — Edit Distance
+### Problem 2 — Regular Expression Matching (DP)
 **Difficulty:** Hard
 
-Given two strings `word1` and `word2`, return the minimum number of operations (insert, delete, replace) required to convert `word1` to `word2`.
-
-**Distributed Team Framing:** Compute the minimal diff between two versions of an async design doc two teammates edited independently. (This is exactly what `gitlight` does under the hood).
-
-**What I'm testing:**
-- Standard 2D DP array: `dp[i][j]` is the edit distance between `word1[0..i]` and `word2[0..j]`.
-- Space optimization: you only need the previous row, so it can be optimized to O(min(m, n)) space.
+Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where '.' Matches any single character and '*' Matches zero or more of the preceding element.
 
 ---
 

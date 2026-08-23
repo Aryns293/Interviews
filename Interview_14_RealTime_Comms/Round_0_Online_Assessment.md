@@ -6,31 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Number of Connected Components in an Undirected Graph
-**Difficulty:** Medium
+### Problem 1 — Find K-th Smallest Pair Distance (Binary Search)
+**Difficulty:** Hard
 
-Given `n` nodes and an array of `edges`, return the number of connected components.
-
-**RTC framing:** "In a P2P video call network, given a list of direct connections between peers, how many isolated groups exist?"
-
-**What I'm testing:**
-- Do you use Union-Find (Disjoint Set) or DFS/BFS?
-- Union-Find is highly preferred for dynamic connectivity (if edges were added over time).
-- Path compression and union by rank.
+The distance of a pair of integers a and b is defined as the absolute difference between a and b. Given an integer array nums and an integer k, return the kth smallest distance among all the pairs.
 
 ---
 
-### Problem 2 — Sliding Window Median
+### Problem 2 — Minimum Window Subsequence (DP)
 **Difficulty:** Hard
 
-Given an integer array `nums` and an integer `k`, return the median of each window of size `k` moving from left to right.
-
-**RTC framing:** "Smoothing out jitter in real-time network latency metrics."
-
-**What I'm testing:**
-- Two Heaps (Max-Heap for lower half, Min-Heap for upper half).
-- Rebalancing the heaps as the window slides.
-- Handling lazy deletion of elements moving out of the window (since deleting from a heap is O(N), you just mark them as deleted and ignore them when they reach the top).
+Given strings s1 and s2, return the minimum contiguous substring part of s1, so that s2 is a subsequence of the part.
 
 ---
 

@@ -6,31 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — String Hashing / Rabin-Karp
-**Difficulty:** Medium-Hard
+### Problem 1 — Distinct Subsequences (DP)
+**Difficulty:** Hard
 
-Implement the Rabin-Karp string matching algorithm to find all occurrences of a pattern in a text.
-
-**Security framing:** High-speed malware signature scanning (finding a specific byte sequence in a large binary).
-
-**What I'm testing:**
-- Do you understand rolling hashes?
-- Math: `hash(s[i+1...j+1]) = (hash(s[i...j]) - s[i] * p^(L-1)) * p + s[j+1]`.
-- Handling modulo arithmetic to prevent integer overflow.
-- Handling hash collisions (you must do a full string comparison if hashes match).
+Given two strings s and t, return the number of distinct subsequences of s which equals t.
 
 ---
 
-### Problem 2 — Valid Parentheses
-**Difficulty:** Easy (but with a twist)
+### Problem 2 — Cracking the Safe (Eulerian Path)
+**Difficulty:** Hard
 
-Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-
-**Security framing:** Parsing user-submitted JSON to ensure there are no malformed nesting attacks (XML/JSON bombs) before passing to the real parser.
-
-**What I'm testing:**
-- Flawless stack implementation.
-- *The Security Twist:* What if the string is 10 GB long? (Stream processing, bounded stack size to prevent OOM/DoS attacks).
+There is a safe protected by a password. The password is a sequence of n digits where each digit can be in the range [0, k - 1]. The safe has a peculiar way of checking the password. When you enter a sequence, it checks the most recent n digits that were entered each time you type a digit. Return any string of minimum length that will unlock the safe guaranteed.
 
 ---
 

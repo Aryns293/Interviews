@@ -6,31 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Evaluate Reverse Polish Notation
-**Difficulty:** Medium
+### Problem 1 — Parse Lisp Expression (Recursion)
+**Difficulty:** Hard
 
-Evaluate the value of an arithmetic expression in Reverse Polish Notation (e.g., `["2","1","+","3","*"]` -> 9).
-
-**Tooling framing:** This is the core logic behind AST (Abstract Syntax Tree) traversal and compiler design, which is highly relevant to CodeSync AI's real-time execution environment.
-
-**What I'm testing:**
-- Do you immediately use a Stack?
-- Proper handling of integer division (truncating toward zero).
-- Code cleanliness: a simple switch statement vs messy if/else chains.
+You are given a string expression representing a Lisp-like expression to return the integer value of. The syntax for expressions is given as follows: An integer, a let expression, an add expression, or a mult expression.
 
 ---
 
-### Problem 2 — Implement Trie (Prefix Tree)
-**Difficulty:** Medium
+### Problem 2 — Basic Calculator (Stack)
+**Difficulty:** Hard
 
-Implement a Trie with `insert`, `search`, and `startsWith` methods.
-
-**Tooling framing:** Autocomplete for an IDE (CodeSync AI) or fast path-matching for a Git clone (gitlight).
-
-**What I'm testing:**
-- Clean Node definition (using a Map or fixed size array of 26 characters).
-- Efficient iteration over the string.
-- Marking the `isEndOfWord` flag correctly.
+Given a string s representing a valid expression, implement a basic calculator to evaluate it, and return the result of the evaluation. The expression may contain parentheses, plus, minus, and empty spaces.
 
 ---
 

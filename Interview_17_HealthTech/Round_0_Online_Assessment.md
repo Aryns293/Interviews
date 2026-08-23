@@ -6,17 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Minimum Window Substring
+### Problem 1 — First Missing Positive (Array)
 **Difficulty:** Hard
 
-Given two strings `s` and `t` of lengths `m` and `n` respectively, return the minimum window substring of `s` such that every character in `t` (including duplicates) is included in the window. If there is no such substring, return the empty string `""`.
+Given an unsorted integer array nums, return the smallest missing positive integer. You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.
 
 ---
 
-### Problem 2 — Accounts Merge
-**Difficulty:** Medium
+### Problem 2 — Sudoku Solver (Backtracking)
+**Difficulty:** Hard
 
-Given a list of `accounts` where each element `accounts[i]` is a list of strings, where the first element `accounts[i][0]` is a name, and the rest of the elements are emails representing emails of the account. Merge the accounts.
+Write a program to solve a Sudoku puzzle by filling the empty cells. A sudoku solution must satisfy all of the rules: each of the digits 1-9 must occur exactly once in each row, column, and the 9 3x3 sub-boxes of the grid.
 
 ---
 

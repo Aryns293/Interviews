@@ -6,21 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Design Twitter
-**Difficulty:** Medium
+### Problem 1 — Remove Invalid Parentheses (BFS)
+**Difficulty:** Hard
 
-Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and is able to see the 10 most recent tweets in the user's news feed.
+Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid. Return all the possible results.
 
 ---
 
-### Problem 2 — Task Scheduler
-**Difficulty:** Medium
+### Problem 2 — Word Ladder II (BFS/DFS)
+**Difficulty:** Hard
 
-Given a characters array `tasks`, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle.
-
-However, there is a non-negative integer `n` that represents the cooldown period between two **same tasks** (the same letter in the array), that is that there must be at least `n` units of time between any two same tasks.
-
-Return the least number of units of times that the CPU will take to finish all the given tasks.
+A transformation sequence from word beginWord to word endWord using a dictionary wordList is a sequence of words beginWord -> s1 -> s2 -> ... -> sk such that every adjacent pair of words differs by a single letter. Return all the shortest transformation sequences from beginWord to endWord.
 
 ---
 

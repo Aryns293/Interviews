@@ -6,17 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — 3Sum
-**Difficulty:** Medium
+### Problem 1 — Trapping Rain Water II (Heap)
+**Difficulty:** Hard
 
-Given an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`. Notice that the solution set must not contain duplicate triplets.
+Given an m x n integer matrix heightMap representing the height of each unit cell in a 2D elevation map, return the volume of water it can trap after raining.
 
 ---
 
-### Problem 2 — Coin Change
-**Difficulty:** Medium
+### Problem 2 — Longest Increasing Path in a Matrix (DFS)
+**Difficulty:** Hard
 
-You are given an integer array `coins` representing coins of different denominations and an integer `amount` representing a total amount of money. Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return `-1`. You may assume that you have an infinite number of each kind of coin. (DP)
+Given an m x n integers matrix, return the length of the longest increasing path in matrix. From each cell, you can either move in four directions: left, right, up, or down.
 
 ---
 

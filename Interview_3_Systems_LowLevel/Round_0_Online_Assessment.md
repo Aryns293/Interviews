@@ -6,32 +6,17 @@
 
 ## DSA Problems
 
-### Problem 1 — Serialize and Deserialize a Binary Tree
+### Problem 1 — LFU Cache (Design)
 **Difficulty:** Hard
 
-Design an algorithm to serialize a binary tree to a string, and deserialize that string back to the original tree structure. Your serialization format is your choice — just make it reversible.
-
-**What I'm testing:**
-- Do you recognize the direct parallel to how Git encodes tree objects into a binary/text format?
-- Do you use pre-order traversal with null markers, or level-order (BFS)?
-- Is your deserializer stateful (uses an index or queue), or do you re-scan the string on every call?
-
-**Common mistakes:**
-- Forgetting that delimiter choice matters — what if node values contain your delimiter character?
-- Off-by-one errors in the deserializer when consuming tokens
+Design and implement a data structure for a Least Frequently Used (LFU) cache. Implement the LFUCache class with get and put methods. The cache must operate in O(1) average time complexity for each operation.
 
 ---
 
-### Problem 2 — Find Median from Data Stream
+### Problem 2 — Find Median from Data Stream (Heaps)
 **Difficulty:** Hard
 
-Design a data structure that supports: `addNum(int num)` — add a number; `findMedian()` — return the current median.
-
-**What I'm testing:**
-- Do you immediately recognize the two-heap approach (max-heap for lower half, min-heap for upper half)?
-- Can you articulate the invariant: `|maxHeap.size - minHeap.size| <= 1`?
-- Do you handle even vs odd total count correctly?
-- Time: O(log n) per add, O(1) per median
+The median is the middle value in an ordered integer list. Implement the MedianFinder class that can add a number into the data structure and return the median of all elements so far in O(1) or O(log n) time.
 
 ---
 
