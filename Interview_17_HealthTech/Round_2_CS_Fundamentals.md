@@ -1,17 +1,30 @@
 # Round 2 — CS Fundamentals
-**Interview:** HealthTech
+**Interview:** HealthTech / Compliance-Heavy Company
 **Duration:** 45 minutes
 
 ---
 
-> *Note: I will open with one easy-medium warm-up coding problem or discussion, then pivot to fundamentals. I will go 3–4 follow-ups deep on whatever I pick from the topics below to test true depth.*
+## Security (Heavy)
+- **Encryption at rest:** Was your Rolewize S3 bucket encryption default or explicitly configured, and do you know the difference in who controls the keys?
+- Field-level vs whole-record encryption when some fields need to stay searchable.
 
-## DBMS - ACID
-**Atomicity:** How is Atomicity actually implemented? (e.g., Write-Ahead Logging (WAL) or Shadow Paging).
+---
 
-## CN - APIs
-**Idempotency:** What does it mean for an HTTP method to be idempotent? (e.g., `PUT` vs `POST`).
+## DBMS
+- **Audit trail design:** Every read of sensitive data logged, not just writes.
+- ACID with a concrete partial-write-leaves-inconsistent-record example.
 
-## SQL - Query 7
-**Consecutive Occurrences:** Write a SQL query to find all numbers that appear at least three times consecutively using `LEAD()` or `LAG()` window functions.
+---
 
+## Computer Networks
+- Why HTTPS alone isn't sufficient for regulatory compliance around PII in transit.
+
+---
+
+## Operating Systems
+- `chmod` on a server storing sensitive intake documents — least-privilege reasoning.
+
+---
+
+## Access Control
+- Role-based field-level access (a nurse sees vitals, a billing clerk sees insurance info) — how is this actually enforced, not just documented as policy?

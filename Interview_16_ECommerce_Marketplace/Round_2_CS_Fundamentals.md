@@ -1,17 +1,31 @@
 # Round 2 — CS Fundamentals
-**Interview:** ECommerce Marketplace
+**Interview:** E-commerce / Marketplace Company
 **Duration:** 45 minutes
 
 ---
 
-> *Note: I will open with one easy-medium warm-up coding problem or discussion, then pivot to fundamentals. I will go 3–4 follow-ups deep on whatever I pick from the topics below to test true depth.*
+## DBMS — Overselling & Indexing
+- A concrete overselling scenario — two customers buy the last unit simultaneously — which isolation level or locking strategy prevents it.
+- B+Tree rationale on a category + price-range catalog index.
 
-## OS - File Systems
-**Links:** Hard Links vs Soft (Symbolic) Links: What is the difference? What happens to the link if the original file is deleted?
+---
 
-## CN - APIs
-**REST vs gRPC:** Why would an enterprise backend use gRPC for internal microservices but expose a REST API to clients?
+## Computer Networks
+- Cache-Control/ETag for a product listing page.
+- CDN vs origin.
 
-## SQL - Query 6
-**Pivoting Rows to Columns:** Output names sorted alphabetically, pivoted so that each occupation has its own column (using `CASE WHEN` combined with aggregates like `MAX()`).
+---
 
+## Redis
+- Cache-aside for "get product details."
+- **Cache stampede:** What happens when a popular product's cache entry expires under heavy concurrent read load, and how do you stop a thundering herd hitting Postgres at once?
+
+---
+
+## Security
+- Why you never trust a client-submitted price or discount value — the actual exploit if you did.
+
+---
+
+## SQL
+- Top 5 best-selling products per category using window functions.
