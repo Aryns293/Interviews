@@ -1,0 +1,100 @@
+# Round 2 — CS Fundamentals
+**Interview:** Backend / Infra-Heavy Product Company
+**Duration:** 60–75 minutes
+**Format:** Verbal + whiteboard. I'll open with one easy-medium warm-up coding problem, then pivot to fundamentals. I will go 3–4 follow-ups deep on whatever I pick. I am not going to cover every topic below — I'll pick the ones that are most relevant to your resume and then keep pushing.
+
+---
+
+## Warm-Up Coding (15 minutes)
+**Write a function that groups a list of jobs by their `status` field and returns a count per status.**
+
+```js
+// Input
+[
+  { id: 1, status: "pending" },
+  { id: 2, status: "done" },
+  { id: 3, status: "pending" },
+  { id: 4, status: "failed" }
+]
+// Expected output
+{ pending: 2, done: 1, failed: 1 }
+```
+Clean one-pass solution. I'm checking if you reach for `reduce` naturally or if you write a verbose for-loop. Either is fine. Explain your choice.
+
+---
+
+## OS — Deadlock & Banker's Algorithm
+
+**Q1:** Name the 4 necessary conditions for deadlock.
+
+**Q2 (follow-up):** Give me a live trace — 4 processes, 3 resource types. I'll give you an allocation matrix and a max matrix. You tell me if the system is in a safe state, and give me the safe sequence.
+
+```
+Processes: P0, P1, P2, P3
+Resources: A=10, B=5, C=7
+
+Allocation:    Max:
+P0: 0 1 0     P0: 7 5 3
+P1: 2 0 0     P1: 3 2 2
+P2: 3 0 2     P2: 9 0 2
+P3: 2 1 1     P3: 2 2 2
+
+Available: A=3, B=3, C=2
+```
+
+**Q3 (tie to your project):** Your BullMQ retry mechanism attempts a job 3 times before dead-lettering it. Could that retry logic itself cause a deadlock? Walk me through why or why not. *(Hint: deadlock requires hold-and-wait. Does BullMQ hold a resource while waiting for another?)*
+
+---
+
+## DBMS — Normalization & Indexing
+
+**Q1:** I give you this schema:
+```
+job_queue(queue_id, queue_name, job_id, job_name, worker_id, worker_name, worker_email, created_at)
+```
+Normalize it to 3NF. Walk me out loud through each step — 1NF → 2NF → 3NF.
+
+**Q2 (follow-up):** In your normalized schema, there's a `status` column on the `jobs` table. Status has 4 possible values: `pending`, `running`, `done`, `failed`. Should you index it?
+
+*What I want to hear:* Low cardinality columns are typically bad index candidates because the query planner may choose a full table scan anyway. However, if 95% of rows are `done` and you're always querying for `pending` jobs, a partial index on `status = 'pending'` is highly effective.
+
+---
+
+## SQL — Window Functions
+
+**Q1:** Write a SQL query that returns the 3rd highest-priority job per queue. Use `DENSE_RANK()`.
+
+```sql
+-- Table: jobs(id, queue_id, priority, name)
+-- Return: queue_id, job name, job priority for rank = 3 within each queue
+```
+
+**Q2 (follow-up):** What's the difference between `RANK()`, `DENSE_RANK()`, and `ROW_NUMBER()`? Give me an example where they produce different results.
+
+**Q3 (follow-up):** I want the count of jobs per worker, but only workers who have processed more than 5 jobs. Write the query. Then tell me why `WHERE` wouldn't work here.
+
+---
+
+## Redis Internals
+
+**Q1:** What's the difference between RDB snapshots and AOF persistence in Redis?
+
+**Q2 (follow-up):** For your QueueFlow system that claims zero data loss, which persistence mode would you configure, and what are the exact tradeoffs you're accepting?
+
+**Q3 (follow-up):** Your QueueFlow uses `BRPOP` to dequeue jobs. What is `BRPOP` actually doing at the socket/OS level compared to a polling loop? What would polling look like, and why is it worse?
+
+---
+
+## Security — HMAC Webhook Verification
+
+**Q1:** Walk me through exactly how you implemented HMAC-SHA256 signature verification in your Rolewize webhook endpoint. Don't just say "I used a library" — walk me through the algorithm steps.
+
+*Expected walk-through:*
+1. External service sends `X-Signature: sha256=<hash>` header
+2. You extract the raw body (before JSON parsing — critical!)
+3. You compute `HMAC-SHA256(secret_key, raw_body)`
+4. You compare your computed hash against the header value
+
+**Q2 (follow-up):** Why must you compare hashes using a constant-time comparison function instead of `===`? What attack does timing-safe comparison prevent?
+
+*Expected answer:* Timing attacks — a character-by-character comparison returns faster if the first characters mismatch, leaking information about how close the attacker's guess is. `crypto.timingSafeEqual()` ensures the comparison always takes the same time.
