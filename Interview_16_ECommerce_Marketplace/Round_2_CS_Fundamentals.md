@@ -29,3 +29,19 @@
 
 ## SQL
 - Top 5 best-selling products per category using window functions.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - File Systems
+**Links:** Hard Links vs Soft (Symbolic) Links: What is the difference? What happens to the link if the original file is deleted?
+
+### CN - APIs
+**REST vs gRPC:** Why would an enterprise backend use gRPC for internal microservices but expose a REST API to clients?
+
+### SQL - Query 6
+**Pivoting Rows to Columns:** Output names sorted alphabetically, pivoted so that each occupation has its own column (using `CASE WHEN` combined with aggregates like `MAX()`).
+

@@ -77,3 +77,19 @@
 - A non-root user inside the container (e.g., UID 1000) maps to UID 1000 on the host — limited privileges even after a container escape
 - Additionally: root in a container can mount host filesystems, access host network interfaces, and write to `/proc` and `/sys` — dangerous even without a full escape
 - Non-root containers cannot do any of the above
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Deadlocks
+**4 Necessary Conditions:** Name and explain them (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait).
+
+### DBMS - Indexing
+**Composite Indexes:** If you have an index on `(A, B, C)`, will a query filtering by `WHERE B = 1 AND C = 2` use the index? (The concept of the Leftmost Prefix Rule).
+
+### OOP - Patterns
+**Factory:** What problem does the Factory Method solve compared to directly calling a constructor?
+

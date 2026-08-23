@@ -46,3 +46,19 @@
 
 **Q2:** "Where in a trading system or your own projects could floating-point precision silently cause a critical bug?"
 *Expected:* Financial ledgers. If you use `float64` to store balances and subtract 0.1 repeatedly, you will eventually end up with `0.00000000000000004` instead of 0. Checking `if (balance == 0)` will fail. Fix: always use integers (store cents/paisa instead of dollars/rupees) or specialized `BigDecimal` classes.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Deadlocks
+**Detection & Recovery:** If a deadlock occurs, how does the OS detect it, and how does it recover (e.g., process termination, resource preemption)?
+
+### CN - Models
+**OSI vs TCP/IP Model:** Name the layers. At which layer do Routers operate? At which layer do Switches operate?
+
+### OOP - Patterns
+**Strategy:** How does it differ from a simple `switch` statement?
+

@@ -98,3 +98,19 @@ Normalize it to 3NF. Walk me out loud through each step — 1NF → 2NF → 3NF.
 **Q2 (follow-up):** Why must you compare hashes using a constant-time comparison function instead of `===`? What attack does timing-safe comparison prevent?
 
 *Expected answer:* Timing attacks — a character-by-character comparison returns faster if the first characters mismatch, leaking information about how close the attacker's guess is. `crypto.timingSafeEqual()` ensures the comparison always takes the same time.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Process Management
+**Process vs Thread:** What is the difference? What resources do they share (Heap, Code, Data) and what is strictly isolated (Stack, Registers)?
+
+### DBMS - Isolation
+**Read Phenomena:** Explain Dirty Reads, Non-Repeatable Reads, and Phantom Reads. Which isolation level prevents which phenomenon?
+
+### OOP - 4 Pillars
+**Inheritance:** The 'Is-A' relationship. Why is Composition ('Has-A') generally favored over deep inheritance trees in modern software design?
+

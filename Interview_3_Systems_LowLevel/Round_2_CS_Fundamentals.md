@@ -77,3 +77,19 @@
 **Q3:** What is `git reflog`, and how does it let you recover from a `git reset --hard`?
 
 *Expected:* reflog tracks every movement of HEAD, including resets. Even after `reset --hard`, the old commit SHA is in reflog for 90 days — you can `git checkout <sha>` to recover it.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Concurrency
+**Synchronization:** What is a Race Condition? What is a Critical Section?
+
+### DBMS - Normalization
+**Normal Forms:** Explain 1NF, 2NF, 3NF, and BCNF with concrete examples of functional dependencies.
+
+### OOP - SOLID
+**Single Responsibility (SRP) & Open/Closed (OCP):** How do you know when a class has too many responsibilities? How can you add new behavior to a system without modifying existing code?
+

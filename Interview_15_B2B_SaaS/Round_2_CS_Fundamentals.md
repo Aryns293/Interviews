@@ -35,3 +35,19 @@
 - Offset pagination is O(N).
 - **Alternative 1: Cursor-based pagination.** `?starting_after=txn_9876`. Fast O(log N) DB lookups using the index.
 - **Alternative 2: Async Export.** Don't do this via a synchronous API. Provide an endpoint `POST /exports`. Return a `202 Accepted` with a Job ID. Generate a CSV in the background (QueueFlow), upload to S3, and email them a presigned URL.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - File Systems
+**File Descriptors:** What happens internally when you open a file in an application?
+
+### CN - Web Arch
+**HTTP Versions:** What are the key architectural differences between HTTP/1.1 (Keep-Alive), HTTP/2 (Multiplexing, Binary Framing), and HTTP/3 (QUIC/UDP)?
+
+### SQL - Query 5
+**Finding Orphan Records (Anti-Joins):** Find all customers who have *never* placed an order using `LEFT JOIN ... IS NULL` or `NOT EXISTS`.
+

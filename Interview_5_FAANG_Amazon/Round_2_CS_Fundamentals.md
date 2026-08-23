@@ -54,3 +54,19 @@
 *Expected:* Timing attack. JavaScript's `===` returns `false` as soon as it finds the first mismatching character. If I measure how long each verification attempt takes, I can determine character-by-character how close my forged signature is to the real one. Characters that match take slightly longer. Repeat 10,000 times to average out noise, and you can eventually reconstruct the expected HMAC value without knowing the secret key.
 
 `crypto.timingSafeEqual()` always compares every byte regardless of the first mismatch — constant time, no information leaked.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Process Management
+**Zombie & Orphan Processes:** What are they, and how does the OS clean them up (e.g., `init` process adoption)?
+
+### DBMS - Indexing
+**B-Trees vs B+ Trees:** Why do modern relational databases use B+ Trees for indexing?
+
+### OOP - SOLID
+**Dependency Inversion Principle (DIP):** Explain Dependency Injection and how it decouples high-level modules from low-level implementations.
+

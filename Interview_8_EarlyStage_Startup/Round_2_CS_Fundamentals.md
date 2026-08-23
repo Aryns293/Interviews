@@ -67,3 +67,19 @@ const result = await db.query('SELECT * FROM users WHERE email = $1', [req.body.
 - POST creates a second resource → duplicate order, duplicate signup, double charge
 - Fix: client generates a UUID for the request and sends it as `Idempotency-Key`. Server stores the key + response. On retry, the same response is returned without re-processing.
 - For MVP: at minimum, uniqueness constraints in the DB as a last line of defense. Add a proper idempotency-key header handler when you see retry-induced duplicates in production.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Deadlocks
+**Prevention vs Avoidance:** What is the difference? Explain Banker's Algorithm and how it ensures the system remains in a 'safe state.'
+
+### DBMS - Indexing
+**Hash Indexes:** When would you use a Hash Index over a B-Tree Index?
+
+### OOP - Patterns
+**Observer:** Explain the Pub/Sub architecture. How is it implemented in event-driven systems?
+

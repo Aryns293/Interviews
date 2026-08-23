@@ -29,3 +29,19 @@
 - Do NOT use Postgres/MySQL for this. It is highly ephemeral, high-write data.
 - Use Redis. Specifically, Redis Sets or Hash Maps for mapping `user_id -> node_id`, and Pub/Sub to broadcast state changes.
 - To handle a server crashing without users sending "offline" events, use Redis key expiration (TTL) acting as a heartbeat. If the client stops pinging every 30 seconds, the key expires, and a keyspace notification triggers an "Offline" broadcast.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - File Systems
+**Inodes:** What is an inode in Unix-like systems?
+
+### CN - Web Arch
+**DNS (Domain Name System):** Explain the difference between an Iterative and Recursive DNS query.
+
+### SQL - Query 4
+**Self-Joins & Hierarchies:** Write a query to find the names of employees who earn strictly more than their direct managers.
+

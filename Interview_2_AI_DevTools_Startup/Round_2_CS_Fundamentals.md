@@ -99,3 +99,19 @@ console.log('E');
 - If a user submits `<script>alert(document.cookie)</script>` as "code" and you render it as innerHTML, it executes in every viewer's browser
 - Fix: always render user-submitted content as plain text (`textContent`, not `innerHTML`)
 - Additional layer: Content Security Policy (CSP) header that disallows inline scripts
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Process Management
+**Context Switching:** What happens during a context switch? Why is switching between threads faster than switching between processes?
+
+### DBMS - Normalization
+**Anomalies:** What are Insertion, Deletion, and Updation anomalies?
+
+### OOP - 4 Pillars
+**Polymorphism:** Explain Compile-time polymorphism (Method Overloading) vs Run-time polymorphism (Method Overriding / Dynamic Dispatch).
+

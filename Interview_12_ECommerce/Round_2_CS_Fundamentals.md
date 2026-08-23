@@ -35,3 +35,19 @@
 - **Cache-aside (Lazy):** Admin updates DB. Admin service deletes the Redis key. Next user reads from Redis (misses), reads from DB, writes to Redis.
 - **Write-through (Proactive):** Admin updates DB AND updates the Redis key directly in the same transaction/flow.
 - E-commerce usually prefers Cache-aside for product catalogs because writing to cache synchronously on every admin update can be fragile, and you don't want the admin update to fail just because Redis had a blip.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Memory Management
+**Page Faults & TLB:** Walk through the exact sequence of events when a CPU tries to access a page that is not currently in RAM. What is the role of the TLB?
+
+### CN - Protocols
+**Congestion Control:** How does TCP handle congestion? (Slow start, AIMD - Additive Increase Multiplicative Decrease).
+
+### SQL - Query 2
+**Top N per Category:** Write a query to find the top 3 highest-paid employees in *each* department using window functions.
+

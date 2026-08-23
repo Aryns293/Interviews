@@ -28,3 +28,19 @@
 
 ## Access Control
 - Role-based field-level access (a nurse sees vitals, a billing clerk sees insurance info) — how is this actually enforced, not just documented as policy?
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### DBMS - ACID
+**Atomicity:** How is Atomicity actually implemented? (e.g., Write-Ahead Logging (WAL) or Shadow Paging).
+
+### CN - APIs
+**Idempotency:** What does it mean for an HTTP method to be idempotent? (e.g., `PUT` vs `POST`).
+
+### SQL - Query 7
+**Consecutive Occurrences:** Write a SQL query to find all numbers that appear at least three times consecutively using `LEAD()` or `LAG()` window functions.
+

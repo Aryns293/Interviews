@@ -70,3 +70,19 @@
 **Q:** Walk me through the TLS handshake. Then explain: if TLS already encrypts and integrity-checks the payload, what additional security property does HMAC provide that TLS doesn't?
 
 *Expected:* TLS provides: encryption (confidentiality), MAC (integrity), and certificate-based server authentication. TLS does NOT verify the *application-level identity* of the sender. A malicious actor can set up a legitimate TLS server and send you a perfectly valid HTTPS webhook. HMAC adds **application-level authentication** — only a party with the pre-shared secret can produce a valid HMAC signature.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - CPU Scheduling
+**CPU Scheduling:** Explain Round Robin, Shortest Job First (SJF), and Multilevel Feedback Queues.
+
+### DBMS - Indexing
+**Clustered vs Non-Clustered Indexes:** What is the difference? How many clustered indexes can a table have?
+
+### OOP - Patterns
+**Singleton:** How do you implement a strictly thread-safe Singleton? Why is it often considered an anti-pattern?
+

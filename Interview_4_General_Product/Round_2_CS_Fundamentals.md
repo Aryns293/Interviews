@@ -91,3 +91,19 @@ class ReportGenerator {
 **Q2:** Why are passwords salted before hashing? What attack does a salt prevent?
 
 *Expected:* A salt is a random value prepended to the password before hashing. Without it, identical passwords produce identical hashes — attackers can precompute a "rainbow table" of common password hashes and look up your hash directly. A salt makes every hash unique even for identical passwords, making precomputation infeasible.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Concurrency
+**Mutex vs Semaphore:** Explain the exact difference. Can a thread that didn't acquire a mutex unlock it? What about a semaphore? What about Spinlocks?
+
+### DBMS - Normalization
+**Denormalization:** When is it correct to intentionally violate normal forms?
+
+### OOP - SOLID
+**Liskov Substitution (LSP) & Interface Segregation (ISP):** Explain the classic 'Square inheriting from Rectangle' violation. Why is forcing a class to implement methods it doesn't need bad design?
+

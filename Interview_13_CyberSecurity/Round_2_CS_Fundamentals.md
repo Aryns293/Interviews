@@ -35,3 +35,19 @@
 - Database level: Every row in the DB must have a `tenant_id`. Every query must include `WHERE tenant_id = ?`.
 - Better: Row-Level Security (RLS) in Postgres, which enforces the `tenant_id` check at the database layer so a developer can't accidentally omit the `WHERE` clause.
 - Queue level: Use distinct Redis namespaces or separate logical databases (`SELECT 1`) for different tenants, or prefix every key with `tenant_id:`.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Memory Management
+**Thrashing & Replacement:** What causes a system to thrash, and how does the OS mitigate it? How does LRU work?
+
+### CN - Web Arch
+**The 'Google' Question:** What happens from the moment you type `https://google.com` to when the page renders? (DNS, ARP, TCP, TLS, HTTP, DOM Parsing).
+
+### SQL - Query 3
+**Cumulative Sum (Running Total):** Calculate the running total of revenue day by day using `SUM() OVER(ORDER BY ...)`.
+

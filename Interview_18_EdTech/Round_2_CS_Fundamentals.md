@@ -30,3 +30,16 @@
 ## Object-Oriented Programming (OOP)
 - Course → Module → Lesson → Assignment as a class hierarchy.
 - Composition or inheritance, and where do quiz/coding-assignment/video-lesson fit as assignment types?
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### DBMS - ACID
+**Consistency & Durability:** What does Consistency mean in the context of ACID versus the CAP Theorem? How does the DB guarantee a transaction survives a power failure immediately after the commit succeeds?
+
+### CN - Security
+**TLS/SSL Handshake:** Explain Symmetric vs Asymmetric encryption. How are both used during a TLS handshake?
+

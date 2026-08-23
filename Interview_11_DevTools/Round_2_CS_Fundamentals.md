@@ -39,3 +39,19 @@
 
 **Q:** "CodeSync AI lets multiple users edit the same file. Two users on opposite sides of the world insert a character at index 5 at the exact same millisecond. How do you resolve this?"
 *Expected:* Acknowledge that basic WebSockets will result in desync. Mention Operational Transformation (OT) or CRDTs (Conflict-free Replicated Data Types). OT requires a central server to sequence and transform the operations (like Google Docs). CRDTs are mathematically commutative and don't strictly require a central sequencer (like Figma/Zed).
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Memory Management
+**Paging vs Segmentation:** What is the difference? How do they solve External and Internal Fragmentation?
+
+### CN - Protocols
+**TCP Handshake:** Explain the 3-way handshake (`SYN`, `SYN-ACK`, `ACK`) and the 4-way teardown.
+
+### SQL - Query 1
+**Nth Highest Salary:** Write a query to find the 3rd highest salary without using `LIMIT`/`OFFSET`, using standard window functions (`DENSE_RANK()`).
+

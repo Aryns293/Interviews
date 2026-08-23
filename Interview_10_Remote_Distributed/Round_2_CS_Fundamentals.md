@@ -39,3 +39,19 @@
 
 **Q:** "JWT — why does stateless auth matter for a distributed, possibly multi-region backend?"
 *Expected:* With session cookies (stateful), the session ID must be looked up in a central database or Redis. If you have servers in US-East and EU-West, checking a central Redis adds latency. JWTs contain the user payload and are cryptographically signed — any region can verify the signature locally without a database lookup.
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### OS - Memory Management
+**Virtual Memory:** Explain what it is and how it maps to Physical Memory using the Page Table.
+
+### CN - Protocols
+**TCP vs UDP:** What is the difference? Why is UDP preferred for VoIP and video streaming, but TCP is used for HTTP and WebSockets?
+
+### OOP - Patterns
+**Decorator:** How can you add functionality to an object dynamically at runtime without subclassing?
+

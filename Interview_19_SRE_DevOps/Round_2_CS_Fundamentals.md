@@ -28,3 +28,16 @@
 
 ## Observability
 - Logs vs metrics vs traces — which would you reach for first for "why is p99 latency spiking right now"?
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### DBMS - Concurrency
+**Isolation:** Explain the difference between Pessimistic Locking and Optimistic Locking (MVCC - Multi-Version Concurrency Control).
+
+### CN - Security
+**Certificates:** What is a Certificate Authority (CA), and how does it prevent Man-in-the-Middle (MITM) attacks?
+

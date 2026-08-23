@@ -15,3 +15,16 @@ Deliberately broad-then-deep, testing range:
 
 ## Git
 "You're joining a client's existing repo with their own conventions, not one you set up — how do you figure out their workflow before your first PR?"
+
+
+---
+
+## Exhaustive CS Fundamentals (Theoretical & SQL)
+*These are additional deep-dive topics specifically assigned to this interview loop to ensure 100% breadth coverage across all 20 interviews.*
+
+### DBMS - Isolation
+**Isolation Levels:** Define Read Uncommitted, Read Committed, Repeatable Read, and Serializable.
+
+### OOP - 4 Pillars
+**Encapsulation & Abstraction:** How does Encapsulation protect object state? When must you use an abstract class instead of an interface?
+
