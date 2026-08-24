@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Minimum Window Substring (Sliding Window)
+### Problem 1 — Minimum Window Substring
 **Difficulty:** Hard
 
 Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string.
 
 ---
 
-### Problem 2 — N-Queens (Backtracking)
+### Problem 2 — N-Queens
 **Difficulty:** Hard
 
 The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle.

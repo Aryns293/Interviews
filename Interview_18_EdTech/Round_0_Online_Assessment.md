@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Remove Invalid Parentheses (BFS)
+### Problem 1 — Remove Invalid Parentheses
 **Difficulty:** Hard
 
 Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid. Return all the possible results.
 
 ---
 
-### Problem 2 — Word Ladder II (BFS/DFS)
+### Problem 2 — Word Ladder II
 **Difficulty:** Hard
 
 A transformation sequence from word beginWord to word endWord using a dictionary wordList is a sequence of words beginWord -> s1 -> s2 -> ... -> sk such that every adjacent pair of words differs by a single letter. Return all the shortest transformation sequences from beginWord to endWord.

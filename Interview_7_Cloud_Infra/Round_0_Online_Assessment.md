@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Minimum Number of Refueling Stops (Heap)
+### Problem 1 — Minimum Number of Refueling Stops
 **Difficulty:** Hard
 
 A car travels from a starting position to a destination which is target miles east of the starting position. Return the minimum number of refueling stops the car must make in order to reach its destination.
 
 ---
 
-### Problem 2 — Swim in Rising Water (Dijkstra/Union-Find)
+### Problem 2 — Swim in Rising Water
 **Difficulty:** Hard
 
 You are given an n x n integer matrix grid where each value grid[i][j] represents the elevation at that point. You can swim from a square to another 4-directionally adjacent square if and only if the elevation of both squares individually are at most t. Return the least time until you can reach the bottom right square.

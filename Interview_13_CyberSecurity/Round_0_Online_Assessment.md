@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Distinct Subsequences (DP)
+### Problem 1 — Distinct Subsequences
 **Difficulty:** Hard
 
 Given two strings s and t, return the number of distinct subsequences of s which equals t.
 
 ---
 
-### Problem 2 — Cracking the Safe (Eulerian Path)
+### Problem 2 — Cracking the Safe
 **Difficulty:** Hard
 
 There is a safe protected by a password. The password is a sequence of n digits where each digit can be in the range [0, k - 1]. The safe has a peculiar way of checking the password. When you enter a sequence, it checks the most recent n digits that were entered each time you type a digit. Return any string of minimum length that will unlock the safe guaranteed.

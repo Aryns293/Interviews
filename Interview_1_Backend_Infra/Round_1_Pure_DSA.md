@@ -6,7 +6,7 @@
 
 ---
 
-## Problem 1 — Course Schedule (Cycle Detection in a DAG)
+## Problem 1 — Course Schedule
 **Difficulty:** Medium
 **Time Budget:** 20 minutes
 

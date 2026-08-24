@@ -5,7 +5,7 @@
 
 ---
 
-## Problem 1 — Rotting Oranges (Task Board Propagation)
+## Problem 1 — Rotting Oranges
 **Difficulty:** Medium
 **Time Budget:** 20 minutes
 
@@ -17,7 +17,7 @@ Simulate a status update propagating across a grid. Return minutes until complet
 
 ---
 
-## Problem 2 — Edit Distance (Async Doc Diff)
+## Problem 2 — Edit Distance
 **Difficulty:** Hard
 **Time Budget:** 40 minutes
 

@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Word Search II (Trie + DFS)
+### Problem 1 — Word Search II
 **Difficulty:** Hard
 
 Given an m x n board of characters and a list of strings words, return all words on the board. Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
 
 ---
 
-### Problem 2 — Maximum Profit in Job Scheduling (DP + Binary Search)
+### Problem 2 — Maximum Profit in Job Scheduling
 **Difficulty:** Hard
 
 We have n jobs, where every job is scheduled to be done from startTime[i] to endTime[i], obtaining a profit of profit[i]. You're given the startTime, endTime and profit arrays, return the maximum profit you can take such that there are no two jobs in the subset with overlapping time range.

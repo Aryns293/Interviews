@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Edit Distance (DP)
+### Problem 1 — Edit Distance
 **Difficulty:** Hard
 
 Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2. You have the following three operations permitted on a word: Insert a character, Delete a character, Replace a character.
 
 ---
 
-### Problem 2 — Regular Expression Matching (DP)
+### Problem 2 — Regular Expression Matching
 **Difficulty:** Hard
 
 Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where '.' Matches any single character and '*' Matches zero or more of the preceding element.

@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Trapping Rain Water II (Heap)
+### Problem 1 — Trapping Rain Water II
 **Difficulty:** Hard
 
 Given an m x n integer matrix heightMap representing the height of each unit cell in a 2D elevation map, return the volume of water it can trap after raining.
 
 ---
 
-### Problem 2 — Longest Increasing Path in a Matrix (DFS)
+### Problem 2 — Longest Increasing Path in a Matrix
 **Difficulty:** Hard
 
 Given an m x n integers matrix, return the length of the longest increasing path in matrix. From each cell, you can either move in four directions: left, right, up, or down.

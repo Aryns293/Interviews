@@ -4,7 +4,7 @@
 
 ---
 
-## Problem 1 — 3Sum (Expense Report Flagging)
+## Problem 1 — 3Sum
 **Difficulty:** Medium
 
 **The Problem:**
@@ -12,7 +12,7 @@
 
 ---
 
-## Problem 2 — Coin Change (Component Assembly)
+## Problem 2 — Coin Change
 **Difficulty:** Hard (Reframed)
 
 **The Problem:**

@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Largest Rectangle in Histogram (Stack)
+### Problem 1 — Largest Rectangle in Histogram
 **Difficulty:** Hard
 
 Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
 
 ---
 
-### Problem 2 — Longest Valid Parentheses (DP/Stack)
+### Problem 2 — Longest Valid Parentheses
 **Difficulty:** Hard
 
 Given a string containing just the characters '(' and ')' return the length of the longest valid (well-formed) parentheses substring.

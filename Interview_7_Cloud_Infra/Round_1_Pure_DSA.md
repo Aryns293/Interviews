@@ -4,7 +4,7 @@
 
 ---
 
-## Problem 1 — Number of Islands (Service Mesh Health Cluster)
+## Problem 1 — Number of Islands
 **Difficulty:** Medium
 **Time Budget:** 20 minutes
 
@@ -32,7 +32,7 @@ Output: 3
 
 ---
 
-## Problem 2 — LRU Cache (Docker Image Eviction)
+## Problem 2 — LRU Cache
 **Difficulty:** Medium
 **Time Budget:** 35 minutes
 

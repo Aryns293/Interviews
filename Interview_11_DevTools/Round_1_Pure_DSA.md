@@ -26,7 +26,7 @@ Find the length of the longest absolute path to a file in the abstracted file sy
 
 ---
 
-## Problem 2 — Implement a Basic Calculator (AST parsing light)
+## Problem 2 — Implement a Basic Calculator
 **Difficulty:** Hard
 **Time Budget:** 35 minutes
 

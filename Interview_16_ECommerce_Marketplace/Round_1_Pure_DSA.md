@@ -4,7 +4,7 @@
 
 ---
 
-## Problem 1 — Product of Array Except Self (Discount Stacking)
+## Problem 1 — Product of Array Except Self
 **Difficulty:** Medium
 
 **The Problem:**
@@ -16,7 +16,7 @@ Reframed as computing a product's final price after all other active discounts s
 
 ---
 
-## Problem 2 — Longest Consecutive Sequence (In-Stock Run)
+## Problem 2 — Longest Consecutive Sequence
 **Difficulty:** Hard
 
 **The Problem:**

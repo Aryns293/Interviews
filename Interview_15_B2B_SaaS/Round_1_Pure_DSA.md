@@ -5,7 +5,7 @@
 
 ---
 
-## Problem 1 — Design Hit Counter (Rate Limiting)
+## Problem 1 — Design Hit Counter
 **Difficulty:** Medium
 **Time Budget:** 25 minutes
 
@@ -20,7 +20,7 @@ Design a hit counter. `hit(timestamp)` records a hit. `getHits(timestamp)` retur
 
 ---
 
-## Problem 2 — Basic Calculator II (Parsing API Filters)
+## Problem 2 — Basic Calculator II
 **Difficulty:** Medium
 **Time Budget:** 35 minutes
 

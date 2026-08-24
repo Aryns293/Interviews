@@ -4,7 +4,7 @@
 
 ---
 
-## Problem 1 — Task Scheduler (Practice Scheduling)
+## Problem 1 — Task Scheduler
 **Difficulty:** Medium
 
 **The Problem:**
@@ -12,7 +12,7 @@ Task Scheduler — reframed as scheduling a student's practice problems with a c
 
 ---
 
-## Problem 2 — Design Twitter (Student Feed)
+## Problem 2 — Design Twitter
 **Difficulty:** Hard
 
 **The Problem:**

@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Sliding Window Maximum (Monotonic Queue)
+### Problem 1 — Sliding Window Maximum
 **Difficulty:** Hard
 
 You are given an array of integers nums, there is a sliding window of size k which is moving from the very left of the array to the very right. Return the max sliding window.
 
 ---
 
-### Problem 2 — Russian Doll Envelopes (LIS)
+### Problem 2 — Russian Doll Envelopes
 **Difficulty:** Hard
 
 You are given a 2D array of integers envelopes where envelopes[i] = [wi, hi] represents the width and the height of an envelope. Return the maximum number of envelopes you can Russian doll (i.e., put one inside other).

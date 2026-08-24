@@ -5,7 +5,7 @@
 
 ---
 
-## Problem 1 — Maximum XOR (Bitwise Trie)
+## Problem 1 — Maximum XOR
 **Difficulty:** Medium-Hard
 **Time Budget:** 20 minutes
 
@@ -18,7 +18,7 @@ Implement a Trie to find the maximum XOR of two numbers in an array.
 
 ---
 
-## Problem 2 — Fenwick Tree (Binary Indexed Tree)
+## Problem 2 — Fenwick Tree
 **Difficulty:** Hard
 **Time Budget:** 40 minutes
 

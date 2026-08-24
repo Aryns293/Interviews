@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — LFU Cache (Design)
+### Problem 1 — LFU Cache
 **Difficulty:** Hard
 
 Design and implement a data structure for a Least Frequently Used (LFU) cache. Implement the LFUCache class with get and put methods. The cache must operate in O(1) average time complexity for each operation.
 
 ---
 
-### Problem 2 — Find Median from Data Stream (Heaps)
+### Problem 2 — Find Median from Data Stream
 **Difficulty:** Hard
 
 The median is the middle value in an ordered integer list. Implement the MedianFinder class that can add a number into the data structure and return the median of all elements so far in O(1) or O(log n) time.

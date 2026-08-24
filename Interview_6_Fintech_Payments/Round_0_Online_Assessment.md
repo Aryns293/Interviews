@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Split Array Largest Sum (Binary Search)
+### Problem 1 — Split Array Largest Sum
 **Difficulty:** Hard
 
 Given an integer array nums and an integer k, split nums into k non-empty subarrays such that the largest sum of any subarray is minimized. Return the minimized largest sum of the split.
 
 ---
 
-### Problem 2 — Number of Submatrices That Sum to Target (Prefix Sum)
+### Problem 2 — Number of Submatrices That Sum to Target
 **Difficulty:** Hard
 
 Given a matrix and a target, return the number of non-empty submatrices that sum to target. A submatrix x1, y1, x2, y2 is the set of all cells matrix[x][y] with x1 <= x <= x2 and y1 <= y <= y2.

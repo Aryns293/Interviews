@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Find K-th Smallest Pair Distance (Binary Search)
+### Problem 1 — Find K-th Smallest Pair Distance
 **Difficulty:** Hard
 
 The distance of a pair of integers a and b is defined as the absolute difference between a and b. Given an integer array nums and an integer k, return the kth smallest distance among all the pairs.
 
 ---
 
-### Problem 2 — Minimum Window Subsequence (DP)
+### Problem 2 — Minimum Window Subsequence
 **Difficulty:** Hard
 
 Given strings s1 and s2, return the minimum contiguous substring part of s1, so that s2 is a subsequence of the part.

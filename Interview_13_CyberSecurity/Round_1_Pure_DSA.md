@@ -5,7 +5,7 @@
 
 ---
 
-## Problem 1 — Implement `strstr` (Needle in Haystack)
+## Problem 1 — Implement `strstr`
 **Difficulty:** Medium
 **Time Budget:** 25 minutes
 

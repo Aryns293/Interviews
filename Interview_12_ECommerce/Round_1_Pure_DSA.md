@@ -5,7 +5,7 @@
 
 ---
 
-## Problem 1 — Word Break (Search Query Parsing)
+## Problem 1 — Word Break
 **Difficulty:** Medium
 **Time Budget:** 25 minutes
 

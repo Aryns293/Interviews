@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — First Missing Positive (Array)
+### Problem 1 — First Missing Positive
 **Difficulty:** Hard
 
 Given an unsorted integer array nums, return the smallest missing positive integer. You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.
 
 ---
 
-### Problem 2 — Sudoku Solver (Backtracking)
+### Problem 2 — Sudoku Solver
 **Difficulty:** Hard
 
 Write a program to solve a Sudoku puzzle by filling the empty cells. A sudoku solution must satisfy all of the rules: each of the digits 1-9 must occur exactly once in each row, column, and the 9 3x3 sub-boxes of the grid.

@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Parse Lisp Expression (Recursion)
+### Problem 1 — Parse Lisp Expression
 **Difficulty:** Hard
 
 You are given a string expression representing a Lisp-like expression to return the integer value of. The syntax for expressions is given as follows: An integer, a let expression, an add expression, or a mult expression.
 
 ---
 
-### Problem 2 — Basic Calculator (Stack)
+### Problem 2 — Basic Calculator
 **Difficulty:** Hard
 
 Given a string s representing a valid expression, implement a basic calculator to evaluate it, and return the result of the evaluation. The expression may contain parentheses, plus, minus, and empty spaces.

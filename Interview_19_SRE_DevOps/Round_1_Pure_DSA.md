@@ -4,7 +4,7 @@
 
 ---
 
-## Problem 1 — Network Delay Time (Dependency Graph)
+## Problem 1 — Network Delay Time
 **Difficulty:** Medium
 
 **The Problem:**
@@ -12,7 +12,7 @@ Network Delay Time (Dijkstra) — reframed as time for a status-change signal to
 
 ---
 
-## Problem 2 — Sliding Window Maximum (Telemetry Rolling Max)
+## Problem 2 — Sliding Window Maximum
 **Difficulty:** Hard
 
 **The Problem:**

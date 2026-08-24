@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Best Time to Buy and Sell Stock IV (DP)
+### Problem 1 — Best Time to Buy and Sell Stock IV
 **Difficulty:** Hard
 
 You are given an integer array prices where prices[i] is the price of a given stock on the ith day, and an integer k. Find the maximum profit you can achieve. You may complete at most k transactions.
 
 ---
 
-### Problem 2 — Max Points on a Line (Math)
+### Problem 2 — Max Points on a Line
 **Difficulty:** Hard
 
 Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane, return the maximum number of points that lie on the same straight line.

@@ -6,14 +6,14 @@
 
 ## DSA Problems
 
-### Problem 1 — Count of Smaller Numbers After Self (Fenwick Tree)
+### Problem 1 — Count of Smaller Numbers After Self
 **Difficulty:** Hard
 
 Given an integer array nums, return an integer array counts where counts[i] is the number of smaller elements to the right of nums[i].
 
 ---
 
-### Problem 2 — Reverse Pairs (Merge Sort)
+### Problem 2 — Reverse Pairs
 **Difficulty:** Hard
 
 Given an integer array nums, return the number of reverse pairs in the array. A reverse pair is a pair (i, j) where 0 <= i < j < nums.length and nums[i] > 2 * nums[j].

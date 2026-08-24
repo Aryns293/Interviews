@@ -27,7 +27,7 @@ Deserialize: consume tokens from a queue, recursively rebuild.
 
 ---
 
-## Problem 2 — Merge Base of a Commit DAG (Custom Problem)
+## Problem 2 — Merge Base of a Commit DAG
 **Difficulty:** Hard
 **Time Budget:** 35 minutes
 

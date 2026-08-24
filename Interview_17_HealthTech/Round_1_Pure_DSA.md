@@ -4,7 +4,7 @@
 
 ---
 
-## Problem 1 — Minimum Window Substring (Log Parsing)
+## Problem 1 — Minimum Window Substring
 **Difficulty:** Medium (Reframed)
 
 **The Problem:**
@@ -12,7 +12,7 @@ Minimum Window Substring — reframed as the smallest window of a patient event 
 
 ---
 
-## Problem 2 — Accounts Merge (Patient Deduplication)
+## Problem 2 — Accounts Merge
 **Difficulty:** Hard (Reframed)
 
 **The Problem:**

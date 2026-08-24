@@ -5,7 +5,7 @@
 
 ---
 
-## Problem 1 — Subarray Sum Equals K (Fraud Pattern Detection)
+## Problem 1 — Subarray Sum Equals K
 **Difficulty:** Medium
 **Time Budget:** 20 minutes
 
