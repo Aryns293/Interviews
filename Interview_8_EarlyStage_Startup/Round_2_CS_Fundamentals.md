@@ -83,3 +83,45 @@ const result = await db.query('SELECT * FROM users WHERE email = $1', [req.body.
 ### OOP - Patterns
 **Observer:** Explain the Pub/Sub architecture. How is it implemented in event-driven systems?
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 8)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Page fault — what happens when one occurs?
+- CPU scheduling algorithms: FCFS, SJF, SRTF, Round Robin, Priority
+
+### Database Management Systems (DBMS)
+- Covering index
+- OLTP vs OLAP
+
+### SQL — Practical Query Problems
+- NULL handling in comparisons, aggregates, JOINs
+- EXISTS vs IN — when to prefer which
+
+### Computer Networks (CN)
+- CDN — how does it improve latency?
+- NAT (Network Address Translation)
+
+### Object-Oriented Programming (OOP)
+- Constructor vs copy constructor
+- Static vs dynamic binding (early vs late)
+
+### Linux
+- chown
+
+### Security
+- Refresh token — why longer-lived than an access token?
+
+### Git
+- Interactive rebase (rebase -i)
+
+### Language Internals — Java
+- G1 garbage collector
+
+### Language Internals — C++
+- Dangling pointer
+

@@ -107,3 +107,47 @@ class ReportGenerator {
 ### OOP - SOLID
 **Liskov Substitution (LSP) & Interface Segregation (ISP):** Explain the classic 'Square inheriting from Rectangle' violation. Why is forcing a class to implement methods it doesn't need bad design?
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 4)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Critical section — how is mutual exclusion achieved?
+- Binary semaphore vs counting semaphore
+
+### Database Management Systems (DBMS)
+- Dirty read, non-repeatable read, phantom read — example of each
+- Two-phase locking (2PL) — how does it relate to deadlocks?
+
+### SQL — Practical Query Problems
+- Delete duplicate rows, keep one
+- Subquery vs CTE (WITH clause)
+
+### Computer Networks (CN)
+- DNS resolution — recursive vs iterative
+- HTTP/1.1 vs HTTP/2 vs HTTP/3
+
+### Object-Oriented Programming (OOP)
+- Composition vs inheritance — 'favor composition'
+- SOLID principles overview
+
+### Linux
+- netstat / ss — what do they show?
+- What does a pipe (|) do at the OS level?
+
+### Security
+- HMAC vs a plain hash
+- Implementing webhook signature verification with HMAC-SHA256
+
+### Git
+- git cherry-pick
+
+### Language Internals — Java
+- == vs .equals()
+
+### Language Internals — C++
+- RAII (Resource Acquisition Is Initialization)
+

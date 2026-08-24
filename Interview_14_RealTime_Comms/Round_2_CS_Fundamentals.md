@@ -45,3 +45,43 @@
 ### SQL - Query 4
 **Self-Joins & Hierarchies:** Write a query to find the names of employees who earn strictly more than their direct managers.
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 14)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Kernel mode vs user mode
+- Spinlock vs mutex — when would you use each?
+
+### Database Management Systems (DBMS)
+- MVCC (Multi-Version Concurrency Control)
+- DELETE vs TRUNCATE vs DROP
+
+### SQL — Practical Query Problems
+- CASE WHEN inside a SELECT
+
+### Computer Networks (CN)
+- Firewall — how does it filter traffic?
+- HTTP vs HTTPS at a mechanical level
+
+### Object-Oriented Programming (OOP)
+- Runtime vs compile-time polymorphism
+
+### Linux
+- tail -f — when is it used?
+
+### Security
+- Non-root container user — what does it protect against?
+
+### Git
+- git blame
+
+### Language Internals — Java
+- volatile keyword
+
+### Language Internals — C++
+- Pure virtual function — what makes a class abstract
+

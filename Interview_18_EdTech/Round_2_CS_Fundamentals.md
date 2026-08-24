@@ -43,3 +43,36 @@
 ### CN - Security
 **TLS/SSL Handshake:** Explain Symmetric vs Asymmetric encryption. How are both used during a TLS handshake?
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 18)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Why does Belady's Anomaly specifically show up under FIFO?
+- What is swapping?
+
+### Database Management Systems (DBMS)
+- Deadlock timeout — how is it configured?
+- Database partitioning: range, list, hash
+
+### SQL — Practical Query Problems
+- Most recent record per group (e.g., latest login per user)
+
+### Computer Networks (CN)
+- HTTP caching — Cache-Control, ETag, Last-Modified
+
+### Object-Oriented Programming (OOP)
+- Singleton pattern vs using it as a global-state escape hatch
+
+### Linux
+- SIGTERM vs SIGKILL vs SIGINT
+
+### Security
+- MIME-type validation — why trusting client-declared MIME is risky
+
+### Git
+- Tag vs branch
+

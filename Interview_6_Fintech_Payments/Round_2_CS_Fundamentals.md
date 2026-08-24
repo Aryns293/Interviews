@@ -86,3 +86,45 @@
 ### OOP - Patterns
 **Singleton:** How do you implement a strictly thread-safe Singleton? Why is it often considered an anti-pattern?
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 6)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Thrashing — what causes it, how do you prevent it?
+- Belady's Anomaly
+
+### Database Management Systems (DBMS)
+- B-Tree vs B+ Tree — why do DBs prefer B+ Trees for indexing?
+- Indexing — clustered vs non-clustered
+
+### SQL — Practical Query Problems
+- Second highest salary without LIMIT/OFFSET
+- GROUP BY with multiple aggregates + HAVING
+
+### Computer Networks (CN)
+- Is POST idempotent? PUT? DELETE? GET? Why?
+- Cookies vs sessions vs JWTs
+
+### Object-Oriented Programming (OOP)
+- Liskov Substitution Principle — classic violation
+- Interface Segregation Principle
+
+### Linux
+- PID vs PPID
+
+### Security
+- JWT — header, payload, signature
+
+### Git
+- reset --soft vs --mixed vs --hard
+
+### Language Internals — Java
+- Checked vs unchecked exceptions
+
+### Language Internals — C++
+- Shallow copy vs deep copy (copy constructor)
+

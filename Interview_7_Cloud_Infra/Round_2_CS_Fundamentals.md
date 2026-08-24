@@ -93,3 +93,45 @@
 ### OOP - Patterns
 **Factory:** What problem does the Factory Method solve compared to directly calling a constructor?
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 7)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Virtual memory — why is it needed?
+- Demand paging
+
+### Database Management Systems (DBMS)
+- When does adding an index hurt performance?
+- Composite index — how does column order matter?
+
+### SQL — Practical Query Problems
+- Pivot rows into columns
+- COUNT(*) vs COUNT(1) vs COUNT(column)
+
+### Computer Networks (CN)
+- WebSockets vs long-polling vs regular HTTP
+- Load balancer — Layer 4 vs Layer 7
+
+### Object-Oriented Programming (OOP)
+- Dependency Inversion Principle
+- Coupling and cohesion
+
+### Linux
+- Foreground vs background process (&, jobs, fg, bg)
+
+### Security
+- Is a JWT payload encrypted or just encoded?
+
+### Git
+- git revert vs git reset
+
+### Language Internals — Java
+- Garbage collection — minor GC vs major GC
+
+### Language Internals — C++
+- Rule of Three / Rule of Five
+

@@ -115,3 +115,47 @@ console.log('E');
 ### OOP - 4 Pillars
 **Polymorphism:** Explain Compile-time polymorphism (Method Overloading) vs Run-time polymorphism (Method Overriding / Dynamic Dispatch).
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 2)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Deadlock — state the 4 necessary conditions
+- Banker's Algorithm — explain with an example
+
+### Database Management Systems (DBMS)
+- Denormalization — when would you use it?
+- Types of keys: primary, foreign, candidate, super, composite, unique
+
+### SQL — Practical Query Problems
+- LAG() and LEAD()
+- WHERE vs HAVING — example where only HAVING works
+
+### Computer Networks (CN)
+- TCP 4-way termination
+- OSI model — all 7 layers with example protocols
+
+### Object-Oriented Programming (OOP)
+- Method overloading vs overriding
+- Diamond problem in multiple inheritance
+
+### Linux
+- kill -9 vs SIGTERM
+- find command — example usage
+
+### Security
+- CSRF — mitigations (tokens, SameSite cookies)
+- Why salt passwords before hashing?
+
+### Git
+- Merge conflict — how do you resolve one?
+
+### Language Internals — Java
+- Treeification in Java 8+ HashMap
+
+### Language Internals — C++
+- vtable and runtime polymorphism
+

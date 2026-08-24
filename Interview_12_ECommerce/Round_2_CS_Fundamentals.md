@@ -51,3 +51,43 @@
 ### SQL - Query 2
 **Top N per Category:** Write a query to find the top 3 highest-paid employees in *each* department using window functions.
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 12)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Orphan process vs zombie process
+- fork() vs exec()
+
+### Database Management Systems (DBMS)
+- Replication — master-slave vs master-master
+- Eventual consistency vs strong consistency
+
+### SQL — Practical Query Problems
+- Top N records per group (e.g., top 3 paid per department)
+
+### Computer Networks (CN)
+- MTU and packet fragmentation
+- REST — what makes an API RESTful?
+
+### Object-Oriented Programming (OOP)
+- Can a constructor be private? Why?
+
+### Linux
+- ps aux — what do the flags mean?
+
+### Security
+- Rate limiting — preventing brute-force attacks
+
+### Git
+- Fast-forward merge
+
+### Language Internals — Java
+- Autoboxing/unboxing — where it causes subtle bugs
+
+### Language Internals — C++
+- const reference as a function parameter
+

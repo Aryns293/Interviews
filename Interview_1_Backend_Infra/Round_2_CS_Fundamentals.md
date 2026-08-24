@@ -114,3 +114,47 @@ Normalize it to 3NF. Walk me out loud through each step — 1NF → 2NF → 3NF.
 ### OOP - 4 Pillars
 **Inheritance:** The 'Is-A' relationship. Why is Composition ('Has-A') generally favored over deep inheritance trees in modern software design?
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 1)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Process vs thread — differences
+- What is context switching, and what does it cost?
+
+### Database Management Systems (DBMS)
+- ACID properties — real example of each one breaking
+- Normalization — 1NF, 2NF, 3NF, BCNF with examples
+
+### SQL — Practical Query Problems
+- Nth highest salary
+- RANK() vs DENSE_RANK() vs ROW_NUMBER()
+
+### Computer Networks (CN)
+- What happens when you type google.com? (DNS → TCP handshake → TLS → HTTP)
+- TCP 3-way handshake
+
+### Object-Oriented Programming (OOP)
+- 4 pillars of OOP with examples
+- Abstract class vs interface — when to use each
+
+### Linux
+- chmod octal notation (e.g., 755, 644)
+- Hard link vs soft (symbolic) link
+
+### Security
+- SQL injection — how prepared statements prevent it
+- XSS — stored vs reflected vs DOM-based
+
+### Git
+- merge vs rebase — when to use each
+
+### Language Internals — Java
+- HashMap internals — hashing, buckets, collision handling
+
+### Language Internals — C++
+- Stack vs heap allocation
+

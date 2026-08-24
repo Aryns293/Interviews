@@ -55,3 +55,43 @@
 ### SQL - Query 1
 **Nth Highest Salary:** Write a query to find the 3rd highest salary without using `LIMIT`/`OFFSET`, using standard window functions (`DENSE_RANK()`).
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 11)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Dining philosophers problem
+- Readers-writers problem
+
+### Database Management Systems (DBMS)
+- Stored procedure — pros/cons vs application-layer logic
+- Database sharding — common strategies
+
+### SQL — Practical Query Problems
+- INNER JOIN vs WHERE-clause filtering of joined tables
+
+### Computer Networks (CN)
+- Socket vs port
+- TCP congestion control (slow start, congestion avoidance)
+
+### Object-Oriented Programming (OOP)
+- Encapsulation and access modifiers
+
+### Linux
+- What is a daemon process?
+
+### Security
+- Man-in-the-middle attack — how HTTPS prevents it
+
+### Git
+- .gitignore — behavior on already-tracked files
+
+### Language Internals — Java
+- Abstract class vs interface in Java (default methods, multiple inheritance)
+
+### Language Internals — C++
+- Pass-by-value vs pass-by-reference vs pass-by-pointer
+

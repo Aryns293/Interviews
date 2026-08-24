@@ -41,3 +41,36 @@
 ### CN - Security
 **Certificates:** What is a Certificate Authority (CA), and how does it prevent Man-in-the-Middle (MITM) attacks?
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 19)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Real-time OS — how does its scheduling differ from general-purpose?
+- Logical (virtual) address vs physical address
+
+### Database Management Systems (DBMS)
+- Write-ahead logging (WAL) — why does it matter for durability?
+- Checkpointing in crash recovery
+
+### SQL — Practical Query Problems
+- Scalar subquery vs table subquery
+
+### Computer Networks (CN)
+- Sticky sessions — why they matter for load-balanced WebSocket connections
+
+### Object-Oriented Programming (OOP)
+- Abstraction vs encapsulation — precise distinction
+
+### Linux
+- systemd/systemctl — high-level purpose
+
+### Security
+- Replay attack — how idempotency/nonces prevent it
+
+### Git
+- Squashing commits — why enforce it before merging?
+

@@ -44,3 +44,36 @@
 ### SQL - Query 7
 **Consecutive Occurrences:** Write a SQL query to find all numbers that appear at least three times consecutively using `LEAD()` or `LAG()` window functions.
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 17)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Internal vs external fragmentation
+- Page replacement algorithms: FIFO, LRU, Optimal — compare
+
+### Database Management Systems (DBMS)
+- How do you read an EXPLAIN / EXPLAIN ANALYZE plan?
+- Full table scan — when does the optimizer choose it over an index scan?
+
+### SQL — Practical Query Problems
+- Natural join — why discouraged in production?
+
+### Computer Networks (CN)
+- Stateful vs stateless protocols
+
+### Object-Oriented Programming (OOP)
+- Interface default methods — why introduced (e.g., Java 8+)
+
+### Linux
+- df -h vs df -i
+
+### Security
+- Pre-signed URL — expiry-time tradeoff
+
+### Git
+- Shallow clone — why use one?
+

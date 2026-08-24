@@ -45,3 +45,36 @@
 ### SQL - Query 6
 **Pivoting Rows to Columns:** Output names sorted alphabetically, pivoted so that each occupation has its own column (using `CASE WHEN` combined with aggregates like `MAX()`).
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 16)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Multi-level queue vs multi-level feedback queue scheduling
+- TLB (Translation Lookaside Buffer) — why does it matter for paging performance?
+
+### Database Management Systems (DBMS)
+- Connection pooling — why does it matter?
+- Query optimization — how does the planner decide execution strategy?
+
+### SQL — Practical Query Problems
+- Find gaps in a sequence of IDs
+
+### Computer Networks (CN)
+- Multicast vs broadcast vs unicast
+
+### Object-Oriented Programming (OOP)
+- Shallow copy vs deep copy
+
+### Linux
+- Dangling symbolic link
+
+### Security
+- Encryption at rest vs in transit
+
+### Git
+- git gc — what happens to loose objects?
+

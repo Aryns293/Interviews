@@ -70,3 +70,47 @@
 ### OOP - SOLID
 **Dependency Inversion Principle (DIP):** Explain Dependency Injection and how it decouples high-level modules from low-level implementations.
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 5)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Process states (new/ready/running/waiting/terminated) and transitions
+- Paging vs segmentation
+
+### Database Management Systems (DBMS)
+- Deadlock detection/resolution in a DB
+- CAP theorem
+
+### SQL — Practical Query Problems
+- Recursive CTE (e.g., org hierarchy)
+- UNION vs UNION ALL
+
+### Computer Networks (CN)
+- TLS/SSL handshake
+- HTTP status codes: 401 vs 403, 301 vs 302, 429, 503, general 1xx-5xx categories
+
+### Object-Oriented Programming (OOP)
+- Single Responsibility Principle — violation example
+- Open/Closed Principle
+
+### Linux
+- cron — reading a crontab schedule
+- top/htop output — load average, CPU%, memory
+
+### Security
+- Why must signature comparison be constant-time? What's a timing attack?
+- Authentication vs authorization
+
+### Git
+- git reflog — recovering lost work
+
+### Language Internals — Java
+- hashCode()/equals() contract
+
+### Language Internals — C++
+- Memory leaks — how smart pointers prevent them
+

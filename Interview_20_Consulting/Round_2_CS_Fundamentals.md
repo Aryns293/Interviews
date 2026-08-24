@@ -28,3 +28,36 @@ Deliberately broad-then-deep, testing range:
 ### OOP - 4 Pillars
 **Encapsulation & Abstraction:** How does Encapsulation protect object state? When must you use an abstract class instead of an interface?
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 20)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- High-level OS boot process
+- Copy-on-write — where is it used (e.g., fork())?
+
+### Database Management Systems (DBMS)
+- Database vs data warehouse
+- Referential integrity — cascading delete/update behavior
+
+### SQL — Practical Query Problems
+- PARTITION BY + ORDER BY combined in a window function
+
+### Computer Networks (CN)
+- Synchronous vs asynchronous communication in distributed systems
+
+### Object-Oriented Programming (OOP)
+- Method hiding vs overriding (static methods)
+
+### Linux
+- Exit code of a command ($?)
+
+### Security
+- OWASP Top 10 — name a few
+
+### Git
+- Undo the last commit without losing changes
+

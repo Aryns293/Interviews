@@ -55,3 +55,45 @@
 ### OOP - Patterns
 **Decorator:** How can you add functionality to an object dynamically at runtime without subclassing?
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 10)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Monitor vs semaphore
+- Producer-consumer problem — how do you solve it?
+
+### Database Management Systems (DBMS)
+- View vs materialized view
+- Trigger — when would you use one?
+
+### SQL — Practical Query Problems
+- SQL execution order (FROM→WHERE→GROUP BY→HAVING→SELECT→ORDER BY→LIMIT)
+- Running total / cumulative sum via window function
+
+### Computer Networks (CN)
+- Router vs switch
+- ARP (Address Resolution Protocol)
+
+### Object-Oriented Programming (OOP)
+- Singleton class — pitfalls
+- 'Is-a' vs 'has-a' relationships
+
+### Linux
+- df vs du
+
+### Security
+- CORS as a security mechanism, not just convenience
+
+### Git
+- Detached HEAD — how do you get out of it?
+
+### Language Internals — Java
+- String immutability and the String pool
+
+### Language Internals — C++
+- Segmentation fault — common causes
+

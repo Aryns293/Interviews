@@ -51,3 +51,43 @@
 ### SQL - Query 3
 **Cumulative Sum (Running Total):** Calculate the running total of revenue day by day using `SUM() OVER(ORDER BY ...)`.
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 13)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Inter-process communication mechanisms (pipes, message queues, shared memory, sockets)
+- What is a system call? Give examples
+
+### Database Management Systems (DBMS)
+- Deadlock-free locking protocols
+- Optimistic vs pessimistic concurrency control
+
+### SQL — Practical Query Problems
+- CHAR vs VARCHAR
+
+### Computer Networks (CN)
+- REST vs GraphQL
+- CORS — why does the browser enforce it?
+
+### Object-Oriented Programming (OOP)
+- Static method/variable vs instance method/variable
+
+### Linux
+- Shell script vs compiled binary
+
+### Security
+- Principle of least privilege
+
+### Git
+- git bisect
+
+### Language Internals — Java
+- ArrayList vs LinkedList — time complexity tradeoffs
+
+### Language Internals — C++
+- Name mangling
+

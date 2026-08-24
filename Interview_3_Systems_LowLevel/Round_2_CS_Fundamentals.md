@@ -93,3 +93,47 @@
 ### OOP - SOLID
 **Single Responsibility (SRP) & Open/Closed (OCP):** How do you know when a class has too many responsibilities? How can you add new behavior to a system without modifying existing code?
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 3)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- What is a race condition, and how do you prevent it?
+- Mutex vs semaphore
+
+### Database Management Systems (DBMS)
+- Transaction states
+- Isolation levels: Read Uncommitted, Read Committed, Repeatable Read, Serializable
+
+### SQL — Practical Query Problems
+- Self-join (employees and their managers)
+- Find duplicate rows in a table
+
+### Computer Networks (CN)
+- TCP/IP model — mapping to OSI
+- TCP vs UDP — when to use each
+
+### Object-Oriented Programming (OOP)
+- Virtual function/method and polymorphism
+- Virtual destructor — why it matters in C++
+
+### Linux
+- grep — common flags (-r, -i, -v)
+- lsof — when would you use it?
+
+### Security
+- bcrypt and cost factor
+- TLS/SSL handshake — what it protects against
+
+### Git
+- git stash
+
+### Language Internals — Java
+- HashMap vs Hashtable
+
+### Language Internals — C++
+- unique_ptr vs shared_ptr
+

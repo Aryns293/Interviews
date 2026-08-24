@@ -62,3 +62,45 @@
 ### OOP - Patterns
 **Strategy:** How does it differ from a simple `switch` statement?
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 9)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Gantt-chart numerical: compute waiting/turnaround time for FCFS/SJF/SRTF/RR/Priority given arrival & burst times
+- Starvation — how is it solved (aging)?
+
+### Database Management Systems (DBMS)
+- Foreign key constraint and referential integrity
+- JOIN types: INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF
+
+### SQL — Practical Query Problems
+- Correlated vs non-correlated subquery
+- Employees earning more than their department's average
+
+### Computer Networks (CN)
+- Forward proxy vs reverse proxy
+- Subnet mask and CIDR notation
+
+### Object-Oriented Programming (OOP)
+- Abstract method — can an all-abstract class just be an interface?
+- Operator overloading
+
+### Linux
+- / (root) vs ~ (home)
+
+### Security
+- Refresh-token rotation — what it protects against
+
+### Git
+- git fetch vs git pull
+
+### Language Internals — Java
+- String vs StringBuilder vs StringBuffer
+
+### Language Internals — C++
+- malloc/free vs new/delete
+

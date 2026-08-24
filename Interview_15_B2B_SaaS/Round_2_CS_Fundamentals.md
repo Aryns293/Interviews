@@ -51,3 +51,43 @@
 ### SQL - Query 5
 **Finding Orphan Records (Anti-Joins):** Find all customers who have *never* placed an order using `LEFT JOIN ... IS NULL` or `NOT EXISTS`.
 
+
+
+---
+
+## Master Question Bank — Assigned Slice (Round 15)
+*These questions are your assigned coverage from the 275-question Master Bank. Every question appears exactly once across all 20 interviews.*
+
+### Operating Systems (OS)
+- Priority inversion — how is it solved (priority inheritance)?
+- Preemptive vs non-preemptive scheduling
+
+### Database Management Systems (DBMS)
+- Logical schema vs physical schema
+- NoSQL types (document, key-value, column-family, graph) — when to choose over SQL
+
+### SQL — Practical Query Problems
+- How do indexes affect JOIN performance?
+
+### Computer Networks (CN)
+- Man-in-the-middle attack — how TLS prevents it
+- VPN — conceptual mechanism
+
+### Object-Oriented Programming (OOP)
+- Object slicing in C++
+
+### Linux
+- Environment variables — temporary vs permanent
+
+### Security
+- Fork bomb — how do process limits mitigate it?
+
+### Git
+- origin vs upstream in a fork workflow
+
+### Language Internals — Java
+- synchronized methods vs synchronized blocks
+
+### Language Internals — C++
+- Move semantics (std::move, rvalue references)
+
