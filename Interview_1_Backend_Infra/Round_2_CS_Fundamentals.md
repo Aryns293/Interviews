@@ -143,11 +143,27 @@ By using `BRPOP` (or modern equivalents like `LMPOP`), we convert a wasteful 'pu
 
 **Q1:** Walk me through exactly how you implemented HMAC-SHA256 signature verification in your Rolewize webhook endpoint. Don't just say "I used a library" — walk me through the algorithm steps.
 
-*Expected walk-through:*
-1. External service sends `X-Signature: sha256=<hash>` header
-2. You extract the raw body (before JSON parsing — critical!)
-3. You compute `HMAC-SHA256(secret_key, raw_body)`
-4. You compare your computed hash against the header value
+*The Ideal Interview Script:*
+
+**1. Start with the Goal (The "Why")**
+"Whenever Rolewize (or a service like Stripe) sends a webhook to my server, my server needs to verify two things before processing it: First, that the payload actually came from Rolewize, and second, that a man-in-the-middle didn't alter the data in transit. We achieve this using an HMAC-SHA256 signature."
+
+**2. Explain the Setup**
+"To make this work, both my server and the Rolewize dashboard share a secret key (an environment variable). This key is never transmitted over the internet."
+
+**3. Walk through the Algorithm (Step-by-Step)**
+
+- **Step 1: Extract the Header**
+  "When the POST request hits my endpoint, the first thing I do is extract the signature from the headers. Usually, this looks like `X-Rolewize-Signature: sha256=<hash>`."
+
+- **Step 2: The 'Raw Body' Trap (This is where you impress them!)**
+  "Next, I need to get the payload body to hash it. However, a huge pitfall here is that you cannot use the parsed JSON object (like `req.body` in Express). HMAC requires the exact stream of bytes sent over the wire. If the JSON parser removes a single space or newline, the hashes won't match. So, I configure my framework to give me the raw string or buffer of the incoming request."
+
+- **Step 3: Compute the Hash**
+  "Using Node's built-in crypto module, I take my shared secret key, and I run it against that raw body using the HMAC-SHA256 algorithm. This generates my own local hash of the payload."
+
+- **Step 4: The Comparison**
+  "Finally, I compare my locally computed hash against the hash provided in the header. If they match exactly, I know the sender has the secret key, and the data wasn't tampered with. Only then do I parse the JSON and process the job."
 
 **Q2 (follow-up):** Why must you compare hashes using a constant-time comparison function instead of `===`? What attack does timing-safe comparison prevent?
 
