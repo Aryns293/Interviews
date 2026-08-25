@@ -167,7 +167,16 @@ By using `BRPOP` (or modern equivalents like `LMPOP`), we convert a wasteful 'pu
 
 **Q2 (follow-up):** Why must you compare hashes using a constant-time comparison function instead of `===`? What attack does timing-safe comparison prevent?
 
-*Expected answer:* Timing attacks — a character-by-character comparison returns faster if the first characters mismatch, leaking information about how close the attacker's guess is. `crypto.timingSafeEqual()` ensures the comparison always takes the same time.
+*The Ideal Interview Script:*
+
+**1. Start with the flaw in standard comparison (`===`)**
+"If you use standard string comparison like `===`, the programming language uses a 'short-circuit' evaluation to optimize performance. For example, if the real hash is `ABCDEF` and the attacker guesses `XYZDEF`, the computer compares the first character (`A` vs `X`), sees they don't match, and **immediately** returns false. It doesn't bother checking the rest of the string."
+
+**2. Explain the Attack (Timing Attacks)**
+"Because of that short-circuiting, the comparison literally takes a few microseconds longer if the first character is correct, and even longer if the first two characters are correct. An attacker can write an automated script to send thousands of webhooks, measure the response times with extreme precision, and guess the valid hash character-by-character based on which guesses take slightly longer to fail. This is known as a **Timing Attack**."
+
+**3. Explain the Solution (`crypto.timingSafeEqual`)**
+"To prevent this, we must use a constant-time comparison function like Node's `crypto.timingSafeEqual()`. This function performs a bitwise comparison of the entire buffer no matter what. Whether the guess fails on the very 1st character or the 64th character, the CPU takes the exact same amount of time to return a result. This completely blinds the attacker, making it impossible for them to measure response times to crack the signature."
 
 
 ---
