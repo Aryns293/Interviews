@@ -94,7 +94,27 @@ Normalize it to 3NF. Walk me out loud through each step — 1NF → 2NF → 3NF.
 
 *How to seal the deal with the interviewer:* "In a true enterprise production environment, we rarely use appendfsync always because the performance hit defeats the purpose of using Redis. Instead, we use AOF with appendfsync everysec. This gives us 99% of Redis's max performance, with a clearly defined worst-case scenario: we risk exactly 1 second of data loss if the server loses power. If the business absolutely requires mathematical zero data loss, we shouldn't use Redis for the queue; we should use a durable log like Kafka or a Postgres-backed queue like Graphile."
 
-**Q3 (follow-up):** Your QueueFlow uses `BRPOP` to dequeue jobs. What is `BRPOP` actually doing at the socket/OS level compared to a polling loop? What would polling look like, and why is it worse?
+**Q3 (follow-up):** If an interviewer says: "You claimed 0% data loss, but Redis AOF everysec loses 1 second of data if the server loses power. Is your project statement of 0% data loss wrong?"
+
+*The Defense (Say this to the interviewer):*
+"When I say 0% data loss, I am specifically referring to Worker Fault Tolerance and Atomic Execution, not hardware-level datastore power failures.
+
+In a naive queue, if a worker pops a job and then the worker crashes, that job is lost forever. I engineered QueueFlow using BullMQ specifically to prevent this.
+
+Under the hood, when a worker picks up a job, BullMQ doesn't just POP it and delete it. It uses an atomic Lua script (historically BRPOPLPUSH) to atomically move the job from the wait list into an active list.
+
+If my worker server completely crashes mid-execution, the job is not lost—it is safely sitting in the active list in Redis. QueueFlow runs a background 'Stalled Job Checker'. When it detects that a job has been in the active list longer than the lock timeout without a heartbeat, it automatically moves the job back to the wait list to be retried by another worker.
+
+That is how I guarantee 0% data loss during execution, network partitions, or worker OOM crashes.
+
+As for the Redis server itself, you are absolutely right: to maintain high throughput, we use AOF everysec. We accept a 1-second risk window if the Redis bare-metal server loses power, because setting fsync always would destroy our throughput. So the 0% data loss guarantee applies strictly to the distributed worker architecture."
+
+*Why this answer gets you hired instantly:*
+- You didn't back down from your resume claim.
+- You proved you know exactly how BullMQ prevents job loss under the hood (Atomic moves + Stalled Job Checker).
+- You conceded the hardware-level truth about Redis (AOF everysec), proving you understand real-world database tradeoffs.
+
+**Q4 (follow-up):** Your QueueFlow uses `BRPOP` to dequeue jobs. What is `BRPOP` actually doing at the socket/OS level compared to a polling loop? What would polling look like, and why is it worse?
 
 ---
 
