@@ -82,6 +82,18 @@ Normalize it to 3NF. Walk me out loud through each step — 1NF → 2NF → 3NF.
 
 **Q2 (follow-up):** For your QueueFlow system that claims zero data loss, which persistence mode would you configure, and what are the exact tradeoffs you're accepting?
 
+*The Core Answer:* To legitimately guarantee zero data loss in the event of a hard crash (like a server power failure), you must configure AOF (Append Only File) with the setting appendfsync always.
+
+*(RDB snapshots are completely off the table for zero data loss, because if Redis crashes between the 5-minute snapshot intervals, you lose up to 5 minutes of jobs).*
+
+*The Exact Tradeoffs You Are Accepting:* If you tell an interviewer you configured appendfsync always, you must immediately prove you understand the severe consequences of that decision:
+
+- **Massive Performance Degradation:** Redis is famous for handling 100,000+ operations per second because it's an in-memory database. By setting appendfsync always, you force Redis to perform a synchronous disk write on every single enqueue/dequeue operation before acknowledging success to the client. You are essentially turning Redis into a slow, disk-backed database. Your throughput will drop from 100k+ ops/sec to whatever the IOPS limit of your SSD is (often just a few thousand ops/sec).
+- **Disk I/O Bottleneck & Main Thread Blocking:** Because Redis is single-threaded for command execution, if the disk is slow to respond to the fsync, the main thread blocks. Every other client waiting to push or pull a job is frozen until that disk write completes.
+- **Bloated File Sizes:** AOF logs every single command (e.g., LPUSH, then RPOP). The file grows rapidly, requiring Redis to frequently trigger an "AOF Rewrite" in the background to compress the log, which consumes additional CPU and memory.
+
+*How to seal the deal with the interviewer:* "In a true enterprise production environment, we rarely use appendfsync always because the performance hit defeats the purpose of using Redis. Instead, we use AOF with appendfsync everysec. This gives us 99% of Redis's max performance, with a clearly defined worst-case scenario: we risk exactly 1 second of data loss if the server loses power. If the business absolutely requires mathematical zero data loss, we shouldn't use Redis for the queue; we should use a durable log like Kafka or a Postgres-backed queue like Graphile."
+
 **Q3 (follow-up):** Your QueueFlow uses `BRPOP` to dequeue jobs. What is `BRPOP` actually doing at the socket/OS level compared to a polling loop? What would polling look like, and why is it worse?
 
 ---
