@@ -1,0 +1,9 @@
+Absolutely. For an interview, you want to explain **what persistence means first**, then **RDB vs AOF**, then the trade-offs, and finally **which one you would choose**.\
+\
+# Redis Persistence: RDB vs AOF\
+\
+## 1. Start with the basic idea\
+\
+If the interviewer asks:\
+\
+\u003e **\\\
