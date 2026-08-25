@@ -116,6 +116,27 @@ As for the Redis server itself, you are absolutely right: to maintain high throu
 
 **Q4 (follow-up):** Your QueueFlow uses `BRPOP` to dequeue jobs. What is `BRPOP` actually doing at the socket/OS level compared to a polling loop? What would polling look like, and why is it worse?
 
+*The Answer:*
+
+**1. What Polling Looks Like & Why It's Worse:**
+"If we didn't use a blocking command, we would have to use standard `RPOP` in a `while(true)` loop. The worker would constantly ask Redis: *'Got a job? No. Got a job? No.'* 
+This is terrible for three reasons:
+1. **CPU Burn:** It pegs the worker's CPU at 100% just running a useless loop.
+2. **Network Saturation:** It floods the network with thousands of useless TCP request/response packets every second.
+3. **Redis Thread Starvation:** Because Redis is single-threaded, forcing it to process 10,000 useless `RPOP` commands a second steals valuable CPU time away from actual producers trying to push jobs."
+
+**2. What `BRPOP` actually does at the OS/Socket Level:**
+"`BRPOP` (Blocking Right Pop) completely eliminates this by using an event-driven model. 
+
+When a worker sends a `BRPOP` command to an empty queue, Redis does **not** send an immediate 'empty' response. Instead, Redis parks that client's connection in an internal dictionary (mapping the queue key to a list of blocked clients). 
+
+At the OS level, the TCP socket remains open, but the connection goes idle. The worker thread goes to sleep, consuming **zero CPU**. 
+
+The moment a producer runs an `LPUSH` to that queue, Redis intercepts it, looks up its dictionary of blocked clients, and instantly writes the new job data directly to the sleeping worker's TCP socket. The OS wakes the worker thread up, and it processes the job.
+
+*The Conclusion:*
+By using `BRPOP` (or modern equivalents like `LMPOP`), we convert a wasteful 'pull' architecture into an instantaneous 'push' architecture. It gives us sub-millisecond job pickup times with zero CPU or network waste."
+
 ---
 
 ## Security — HMAC Webhook Verification
