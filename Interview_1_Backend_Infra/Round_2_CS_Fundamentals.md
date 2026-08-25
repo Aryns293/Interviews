@@ -78,10 +78,9 @@ Normalize it to 3NF. Walk me out loud through each step — 1NF → 2NF → 3NF.
 ## Redis Internals
 
 **Q1:** What's the difference between RDB snapshots and AOF persistence in Redis?
+*Answer / Reference:* [ChatGPT Explanation of RDB vs AOF & Zero Data Loss Tradeoffs](https://chatgpt.com/share/6a8de23f-13f8-83ee-ac24-14e3726b01a0)
 
 **Q2 (follow-up):** For your QueueFlow system that claims zero data loss, which persistence mode would you configure, and what are the exact tradeoffs you're accepting?
-
-*Answer / Reference:* [ChatGPT Explanation of RDB vs AOF & Zero Data Loss Tradeoffs](https://chatgpt.com/share/6a8de23f-13f8-83ee-ac24-14e3726b01a0)
 
 **Q3 (follow-up):** Your QueueFlow uses `BRPOP` to dequeue jobs. What is `BRPOP` actually doing at the socket/OS level compared to a polling loop? What would polling look like, and why is it worse?
 
